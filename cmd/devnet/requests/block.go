@@ -9,10 +9,10 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/jsonrpc"
+	"github.com/ledgerwatch/erigon/v2/common/math"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/turbo/jsonrpc"
 )
 
 type BlockNumber string

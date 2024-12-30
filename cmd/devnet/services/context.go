@@ -3,9 +3,9 @@ package services
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/devnet"
-	"github.com/ledgerwatch/erigon/cmd/devnet/services/accounts"
-	"github.com/ledgerwatch/erigon/cmd/devnet/services/polygon"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/devnet"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/services/accounts"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/services/polygon"
 )
 
 type ctxKey int

@@ -5,10 +5,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
-	ssz2 "github.com/ledgerwatch/erigon/cl/ssz"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
+	ssz2 "github.com/ledgerwatch/erigon/v2/cl/ssz"
 )
 
 type SlotData struct {

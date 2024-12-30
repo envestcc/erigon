@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
-	"github.com/ledgerwatch/erigon/cl/persistence/base_encoding"
-	state_accessors "github.com/ledgerwatch/erigon/cl/persistence/state"
-	shuffling2 "github.com/ledgerwatch/erigon/cl/phase1/core/state/shuffling"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/base_encoding"
+	state_accessors "github.com/ledgerwatch/erigon/v2/cl/persistence/state"
+	shuffling2 "github.com/ledgerwatch/erigon/v2/cl/phase1/core/state/shuffling"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"

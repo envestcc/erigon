@@ -8,17 +8,17 @@ import (
 	"time"
 
 	"github.com/Giulio2002/bls"
-	"github.com/ledgerwatch/erigon/cl/aggregation"
-	"github.com/ledgerwatch/erigon/cl/beacon/synced_data"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/fork"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state/lru"
-	"github.com/ledgerwatch/erigon/cl/phase1/forkchoice"
-	"github.com/ledgerwatch/erigon/cl/phase1/network/subnets"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/cl/utils/eth_clock"
-	"github.com/ledgerwatch/erigon/cl/validator/committee_subscription"
+	"github.com/ledgerwatch/erigon/v2/cl/aggregation"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/synced_data"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/fork"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state/lru"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/forkchoice"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/network/subnets"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/utils/eth_clock"
+	"github.com/ledgerwatch/erigon/v2/cl/validator/committee_subscription"
 )
 
 var (

@@ -4,13 +4,13 @@ import (
 	_ "embed"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/beacon/beacon_router_configuration"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beacon_router_configuration"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
 	"github.com/spf13/afero"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 	"github.com/stretchr/testify/require"
 )
 

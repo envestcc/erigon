@@ -21,9 +21,9 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/bitmapdb"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/ethdb/cbor"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/ethdb/cbor"
+	"github.com/ledgerwatch/erigon/v2/ethdb/prune"
 )
 
 const (

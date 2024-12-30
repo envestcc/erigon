@@ -14,15 +14,15 @@ import (
 
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcservices"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/eth/protocols/eth"
-	"github.com/ledgerwatch/erigon/ethdb/privateapi"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/builder"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
-	"github.com/ledgerwatch/erigon/turbo/stages"
-	"github.com/ledgerwatch/erigon/turbo/stages/mock"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/rpcservices"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/eth/protocols/eth"
+	"github.com/ledgerwatch/erigon/v2/ethdb/privateapi"
+	"github.com/ledgerwatch/erigon/v2/rlp"
+	"github.com/ledgerwatch/erigon/v2/turbo/builder"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/mock"
 )
 
 func TestEthSubscribe(t *testing.T) {

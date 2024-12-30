@@ -25,7 +25,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ledgerwatch/erigon/common/debug"
+	"github.com/ledgerwatch/erigon/v2/common/debug"
 	"github.com/ledgerwatch/log/v3"
 )
 

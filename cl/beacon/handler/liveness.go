@@ -9,9 +9,9 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
 )
 
 type live struct {

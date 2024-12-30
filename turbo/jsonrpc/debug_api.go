@@ -13,17 +13,17 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/order"
 	"github.com/ledgerwatch/erigon-lib/kv/rawdbv3"
 
-	"github.com/ledgerwatch/erigon/common/changeset"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/eth/tracers"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
-	"github.com/ledgerwatch/erigon/turbo/transactions"
+	"github.com/ledgerwatch/erigon/v2/common/changeset"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/state"
+	"github.com/ledgerwatch/erigon/v2/core/types/accounts"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync/stages"
+	"github.com/ledgerwatch/erigon/v2/eth/tracers"
+	"github.com/ledgerwatch/erigon/v2/rlp"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/turbo/adapter/ethapi"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/turbo/transactions"
 )
 
 // AccountRangeMaxResults is the maximum number of results to be returned per call

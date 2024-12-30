@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
 )
 
 func newBeaconResponse(data any) *beaconhttp.BeaconResponse {

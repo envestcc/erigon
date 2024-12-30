@@ -8,15 +8,15 @@ import (
 
 	chain2 "github.com/ledgerwatch/erigon-lib/chain"
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 	"github.com/spf13/cobra"
 
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/params"
 )
 
 var (

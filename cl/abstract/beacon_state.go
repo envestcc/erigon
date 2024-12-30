@@ -3,9 +3,9 @@ package abstract
 import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/types/clonable"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
 )
 
 type BeaconState interface {

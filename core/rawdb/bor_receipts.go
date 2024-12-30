@@ -11,10 +11,10 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/dbutils"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/ethdb/cbor"
-	bortypes "github.com/ledgerwatch/erigon/polygon/bor/types"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/ethdb/cbor"
+	bortypes "github.com/ledgerwatch/erigon/v2/polygon/bor/types"
+	"github.com/ledgerwatch/erigon/v2/rlp"
 )
 
 var (

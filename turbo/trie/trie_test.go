@@ -29,10 +29,10 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/ledgerwatch/erigon/v2/common"
+	"github.com/ledgerwatch/erigon/v2/core/types/accounts"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/rlp"
 )
 
 func init() {

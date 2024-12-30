@@ -7,7 +7,7 @@ import (
 
 	silkworm_go "github.com/erigontech/silkworm-go"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/consensus"
+	"github.com/ledgerwatch/erigon/v2/consensus"
 	"github.com/ledgerwatch/log/v3"
 )
 

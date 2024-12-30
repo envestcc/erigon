@@ -5,12 +5,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/spectest"
+	"github.com/ledgerwatch/erigon/v2/spectest"
 
-	"github.com/ledgerwatch/erigon/cl/abstract"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
-	"github.com/ledgerwatch/erigon/cl/transition/impl/eth2/statechange"
+	"github.com/ledgerwatch/erigon/v2/cl/abstract"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/transition/impl/eth2/statechange"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -33,10 +33,10 @@ import (
 
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/bitutil"
-	"github.com/ledgerwatch/erigon/common/debug"
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/ledgerwatch/erigon/v2/common"
+	"github.com/ledgerwatch/erigon/v2/common/bitutil"
+	"github.com/ledgerwatch/erigon/v2/common/debug"
+	"github.com/ledgerwatch/erigon/v2/crypto"
 )
 
 const (

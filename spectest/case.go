@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/transition/machine"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/transition/machine"
 
 	"gfx.cafe/util/go/generic"
 )

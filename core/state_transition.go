@@ -24,13 +24,13 @@ import (
 	"github.com/ledgerwatch/erigon-lib/txpool/txpoolcfg"
 	types2 "github.com/ledgerwatch/erigon-lib/types"
 
-	cmath "github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/common/u256"
-	"github.com/ledgerwatch/erigon/consensus/misc"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/params"
+	cmath "github.com/ledgerwatch/erigon/v2/common/math"
+	"github.com/ledgerwatch/erigon/v2/common/u256"
+	"github.com/ledgerwatch/erigon/v2/consensus/misc"
+	"github.com/ledgerwatch/erigon/v2/core/vm"
+	"github.com/ledgerwatch/erigon/v2/core/vm/evmtypes"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/params"
 )
 
 var emptyCodeHash = crypto.Keccak256Hash(nil)

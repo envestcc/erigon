@@ -13,9 +13,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/length"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/ethdb"
-	"github.com/ledgerwatch/erigon/turbo/trie"
+	"github.com/ledgerwatch/erigon/v2/common/math"
+	"github.com/ledgerwatch/erigon/v2/ethdb"
+	"github.com/ledgerwatch/erigon/v2/turbo/trie"
 	"github.com/ledgerwatch/log/v3"
 )
 

@@ -12,12 +12,12 @@ import (
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/execution"
 	types2 "github.com/ledgerwatch/erigon-lib/gointerfaces/types"
 
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/builder"
-	"github.com/ledgerwatch/erigon/turbo/engineapi/engine_helpers"
-	"github.com/ledgerwatch/erigon/turbo/execution/eth1/eth1_utils"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/turbo/builder"
+	"github.com/ledgerwatch/erigon/v2/turbo/engineapi/engine_helpers"
+	"github.com/ledgerwatch/erigon/v2/turbo/execution/eth1/eth1_utils"
 )
 
 func (e *EthereumExecutionModule) checkWithdrawalsPresence(time uint64, withdrawals []*types.Withdrawal) error {

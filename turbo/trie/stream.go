@@ -25,9 +25,9 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/length"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/turbo/rlphacks"
+	"github.com/ledgerwatch/erigon/v2/common"
+	"github.com/ledgerwatch/erigon/v2/core/types/accounts"
+	"github.com/ledgerwatch/erigon/v2/turbo/rlphacks"
 )
 
 // StreamItem is an enum type for values that help distinguish different

@@ -27,9 +27,9 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutil"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon/accounts/abi"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/eth/tracers"
+	"github.com/ledgerwatch/erigon/v2/accounts/abi"
+	"github.com/ledgerwatch/erigon/v2/core/vm"
+	"github.com/ledgerwatch/erigon/v2/eth/tracers"
 )
 
 //go:generate gencodec -type callFrame -field-override callFrameMarshaling -out gen_callframe_json.go

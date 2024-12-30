@@ -22,9 +22,9 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/ledgerwatch/erigon/v2/core/types/accounts"
 
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/ledgerwatch/erigon/v2/rlp"
 )
 
 const codeSizeUncached = -1

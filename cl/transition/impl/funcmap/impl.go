@@ -1,10 +1,10 @@
 package funcmap
 
 import (
-	"github.com/ledgerwatch/erigon/cl/abstract"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/transition/machine"
+	"github.com/ledgerwatch/erigon/v2/cl/abstract"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/transition/machine"
 )
 
 var _ machine.Interface = (*Impl)(nil)

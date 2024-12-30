@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/ledgerwatch/erigon/v2/core/vm/evmtypes"
+	"github.com/ledgerwatch/erigon/v2/params"
 
 	"github.com/holiman/uint256"
 	"pgregory.net/rapid"

@@ -5,7 +5,7 @@ import (
 
 	_ "embed"
 
-	"github.com/ledgerwatch/erigon/cl/beacon/beacontest"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beacontest"
 )
 
 //go:embed harness_test_data.yml

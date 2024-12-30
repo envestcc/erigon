@@ -19,14 +19,14 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/dbutils"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/adapter"
-	"github.com/ledgerwatch/erigon/turbo/execution/eth1/eth1_chain_reader.go"
-	"github.com/ledgerwatch/erigon/turbo/services"
-	"github.com/ledgerwatch/erigon/turbo/stages/bodydownload"
-	"github.com/ledgerwatch/erigon/turbo/stages/headerdownload"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/rlp"
+	"github.com/ledgerwatch/erigon/v2/turbo/adapter"
+	"github.com/ledgerwatch/erigon/v2/turbo/execution/eth1/eth1_chain_reader.go"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/bodydownload"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/headerdownload"
 )
 
 const (

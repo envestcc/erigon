@@ -8,11 +8,11 @@ import (
 	"testing"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	mockaggregation "github.com/ledgerwatch/erigon/cl/aggregation/mock_services"
-	"github.com/ledgerwatch/erigon/cl/beacon/beacon_router_configuration"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/pool"
-	"github.com/ledgerwatch/erigon/common"
+	mockaggregation "github.com/ledgerwatch/erigon/v2/cl/aggregation/mock_services"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beacon_router_configuration"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/pool"
+	"github.com/ledgerwatch/erigon/v2/common"
 	"github.com/stretchr/testify/suite"
 	"go.uber.org/mock/gomock"
 )

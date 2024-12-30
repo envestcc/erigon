@@ -24,9 +24,9 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/temporal/historyv2"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/common/changeset"
-	"github.com/ledgerwatch/erigon/ethdb"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
+	"github.com/ledgerwatch/erigon/v2/common/changeset"
+	"github.com/ledgerwatch/erigon/v2/ethdb"
+	"github.com/ledgerwatch/erigon/v2/ethdb/prune"
 )
 
 type HistoryCfg struct {

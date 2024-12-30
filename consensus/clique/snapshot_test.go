@@ -30,14 +30,14 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/length"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/consensus/clique"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/eth/stagedsync"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/turbo/stages/mock"
-	"github.com/ledgerwatch/erigon/turbo/testlog"
+	"github.com/ledgerwatch/erigon/v2/consensus/clique"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/mock"
+	"github.com/ledgerwatch/erigon/v2/turbo/testlog"
 )
 
 // testerAccountPool is a pool to maintain currently active tester accounts,
@@ -374,7 +374,7 @@ func TestClique(t *testing.T) {
 			failure: clique.ErrRecentlySigned,
 		}, {
 			// Recent signatures should not reset on checkpoint blocks imported in a new
-			// batch (https://github.com/ledgerwatch/erigon/issues/17593). Whilst this
+			// batch (https://github.com/ledgerwatch/erigon/v2/issues/17593). Whilst this
 			// seems overly specific and weird, it was a Rinkeby consensus split.
 			name:    "Recent signatures should not reset on checkpoint blocks imported in a new batch",
 			epoch:   3,

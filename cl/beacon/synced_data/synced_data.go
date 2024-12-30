@@ -3,8 +3,8 @@ package synced_data
 import (
 	"sync/atomic"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
 )
 
 type SyncedDataManager struct {

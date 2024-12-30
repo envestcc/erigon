@@ -19,13 +19,13 @@ import (
 	"github.com/ledgerwatch/erigon-lib/gointerfaces"
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/ethdb/privateapi"
-	"github.com/ledgerwatch/erigon/p2p"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
+	"github.com/ledgerwatch/erigon/v2/ethdb/privateapi"
+	"github.com/ledgerwatch/erigon/v2/p2p"
+	"github.com/ledgerwatch/erigon/v2/rlp"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
 )
 
 var _ services.FullBlockReader = &RemoteBackend{}

@@ -14,7 +14,7 @@ import (
 	time "time"
 
 	common "github.com/ledgerwatch/erigon-lib/common"
-	clparams "github.com/ledgerwatch/erigon/cl/clparams"
+	clparams "github.com/ledgerwatch/erigon/v2/cl/clparams"
 	gomock "go.uber.org/mock/gomock"
 )
 

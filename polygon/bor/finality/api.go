@@ -3,9 +3,9 @@ package finality
 import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/polygon/bor/finality/whitelist"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/finality/whitelist"
 )
 
 func GetFinalizedBlockNumber(tx kv.Tx) uint64 {

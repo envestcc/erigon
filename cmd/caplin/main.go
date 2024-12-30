@@ -18,24 +18,24 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/disk"
 	"github.com/ledgerwatch/erigon-lib/common/mem"
-	"github.com/ledgerwatch/erigon/cl/beacon/beacon_router_configuration"
-	"github.com/ledgerwatch/erigon/cl/persistence/db_config"
-	"github.com/ledgerwatch/erigon/cl/phase1/core"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
-	execution_client2 "github.com/ledgerwatch/erigon/cl/phase1/execution_client"
-	"github.com/ledgerwatch/erigon/cl/utils/eth_clock"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beacon_router_configuration"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/db_config"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
+	execution_client2 "github.com/ledgerwatch/erigon/v2/cl/phase1/execution_client"
+	"github.com/ledgerwatch/erigon/v2/cl/utils/eth_clock"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
 
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/cmd/caplin/caplin1"
-	"github.com/ledgerwatch/erigon/cmd/caplin/caplincli"
-	"github.com/ledgerwatch/erigon/cmd/caplin/caplinflags"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinelflags"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/turbo/app"
-	"github.com/ledgerwatch/erigon/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/cmd/caplin/caplin1"
+	"github.com/ledgerwatch/erigon/v2/cmd/caplin/caplincli"
+	"github.com/ledgerwatch/erigon/v2/cmd/caplin/caplinflags"
+	"github.com/ledgerwatch/erigon/v2/cmd/sentinel/sentinelflags"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/turbo/app"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
 )
 
 func main() {

@@ -4,11 +4,11 @@ import (
 	"strconv"
 
 	"github.com/ledgerwatch/erigon-lib/chain/networkname"
-	"github.com/ledgerwatch/erigon/cmd/devnet/accounts"
-	"github.com/ledgerwatch/erigon/cmd/devnet/args"
-	"github.com/ledgerwatch/erigon/cmd/devnet/devnet"
-	account_services "github.com/ledgerwatch/erigon/cmd/devnet/services/accounts"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/accounts"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/args"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/devnet"
+	account_services "github.com/ledgerwatch/erigon/v2/cmd/devnet/services/accounts"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 	"github.com/ledgerwatch/log/v3"
 )
 

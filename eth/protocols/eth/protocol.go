@@ -26,9 +26,9 @@ import (
 	proto_sentry "github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
 	rlp2 "github.com/ledgerwatch/erigon-lib/rlp"
 
-	"github.com/ledgerwatch/erigon/core/forkid"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/ledgerwatch/erigon/v2/core/forkid"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/rlp"
 )
 
 var ProtocolToString = map[uint]string{

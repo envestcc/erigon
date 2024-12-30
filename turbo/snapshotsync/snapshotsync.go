@@ -20,9 +20,9 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/rawdbv3"
 	"github.com/ledgerwatch/erigon-lib/state"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	coresnaptype "github.com/ledgerwatch/erigon/core/snaptype"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	coresnaptype "github.com/ledgerwatch/erigon/v2/core/snaptype"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
 	"github.com/ledgerwatch/log/v3"
 )
 

@@ -23,10 +23,10 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/recsplit"
 	"github.com/ledgerwatch/erigon-lib/seg"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	coresnaptype "github.com/ledgerwatch/erigon/core/snaptype"
-	bortypes "github.com/ledgerwatch/erigon/polygon/bor/types"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	coresnaptype "github.com/ledgerwatch/erigon/v2/core/snaptype"
+	bortypes "github.com/ledgerwatch/erigon/v2/polygon/bor/types"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
 	"github.com/ledgerwatch/log/v3"
 )
 

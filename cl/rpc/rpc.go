@@ -8,9 +8,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/ledgerwatch/erigon/cl/sentinel/communication"
-	"github.com/ledgerwatch/erigon/cl/sentinel/communication/ssz_snappy"
-	"github.com/ledgerwatch/erigon/cl/utils/eth_clock"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/communication"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/communication/ssz_snappy"
+	"github.com/ledgerwatch/erigon/v2/cl/utils/eth_clock"
 
 	"github.com/c2h5oh/datasize"
 	"github.com/golang/snappy"
@@ -20,10 +20,10 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"go.uber.org/zap/buffer"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 )
 
 const maxMessageLength = 18 * datasize.MB

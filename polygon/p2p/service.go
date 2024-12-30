@@ -7,7 +7,7 @@ import (
 	"github.com/ledgerwatch/log/v3"
 
 	"github.com/ledgerwatch/erigon-lib/direct"
-	sentrymulticlient "github.com/ledgerwatch/erigon/p2p/sentry/sentry_multi_client"
+	sentrymulticlient "github.com/ledgerwatch/erigon/v2/p2p/sentry/sentry_multi_client"
 )
 
 //go:generate mockgen -typed=true -source=./service.go -destination=./service_mock.go -package=p2p . Service

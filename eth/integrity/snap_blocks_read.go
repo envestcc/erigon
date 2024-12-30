@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
 	"github.com/ledgerwatch/log/v3"
 )
 

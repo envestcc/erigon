@@ -23,9 +23,9 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"google.golang.org/grpc"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/filters"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/eth/filters"
+	"github.com/ledgerwatch/erigon/v2/rlp"
 )
 
 // Filters holds the state for managing subscriptions to various Ethereum events.

@@ -18,18 +18,18 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/disk"
 	"github.com/ledgerwatch/erigon-lib/common/mem"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/phase1/core"
-	"github.com/ledgerwatch/erigon/cl/sentinel"
-	"github.com/ledgerwatch/erigon/cl/sentinel/service"
-	"github.com/ledgerwatch/erigon/cl/utils/eth_clock"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinelcli"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinelflags"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/service"
+	"github.com/ledgerwatch/erigon/v2/cl/utils/eth_clock"
+	"github.com/ledgerwatch/erigon/v2/cmd/sentinel/sentinelcli"
+	"github.com/ledgerwatch/erigon/v2/cmd/sentinel/sentinelflags"
 
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 
-	sentinelapp "github.com/ledgerwatch/erigon/turbo/app"
+	sentinelapp "github.com/ledgerwatch/erigon/v2/turbo/app"
 )
 
 func main() {

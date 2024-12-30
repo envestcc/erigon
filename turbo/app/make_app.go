@@ -10,15 +10,15 @@ import (
 	"github.com/urfave/cli/v2"
 
 	"github.com/ledgerwatch/erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon/turbo/logging"
-	enode "github.com/ledgerwatch/erigon/turbo/node"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
+	enode "github.com/ledgerwatch/erigon/v2/turbo/node"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/node"
-	"github.com/ledgerwatch/erigon/node/nodecfg"
-	"github.com/ledgerwatch/erigon/params"
-	cli2 "github.com/ledgerwatch/erigon/turbo/cli"
-	"github.com/ledgerwatch/erigon/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/node"
+	"github.com/ledgerwatch/erigon/v2/node/nodecfg"
+	"github.com/ledgerwatch/erigon/v2/params"
+	cli2 "github.com/ledgerwatch/erigon/v2/turbo/cli"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
 )
 
 // MakeApp creates a cli application (based on `github.com/urlfave/cli` package).

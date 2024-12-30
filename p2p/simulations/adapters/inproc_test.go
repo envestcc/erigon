@@ -23,7 +23,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/p2p/simulations/pipes"
+	"github.com/ledgerwatch/erigon/v2/p2p/simulations/pipes"
 )
 
 func TestTCPPipe(t *testing.T) {

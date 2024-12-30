@@ -9,7 +9,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	types2 "github.com/ledgerwatch/erigon-lib/types"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 // BlockContext provides the EVM with auxiliary information. Once provided

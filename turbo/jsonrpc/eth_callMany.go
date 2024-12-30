@@ -13,15 +13,15 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutil"
 
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/common/math"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/core/state"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/vm"
+	"github.com/ledgerwatch/erigon/v2/core/vm/evmtypes"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/turbo/adapter/ethapi"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
 )
 
 type BlockOverrides struct {

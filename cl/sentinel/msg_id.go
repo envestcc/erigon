@@ -1,7 +1,7 @@
 package sentinel
 
 import (
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 	pubsubpb "github.com/libp2p/go-libp2p-pubsub/pb"
 )
 

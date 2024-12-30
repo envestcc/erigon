@@ -16,9 +16,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/downloader"
 	"github.com/ledgerwatch/erigon-lib/downloader/snaptype"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/sync"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/sync"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 )
 
 var (

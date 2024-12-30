@@ -8,12 +8,12 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
-	"github.com/ledgerwatch/erigon/cmd/caplin/caplinflags"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinelcli"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cmd/caplin/caplinflags"
+	"github.com/ledgerwatch/erigon/v2/cmd/sentinel/sentinelcli"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/common"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 )

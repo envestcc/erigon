@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/polygon/bor"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
 )
 
 type AccumulatedHeadersVerifier func(waypoint heimdall.Waypoint, headers []*types.Header) error

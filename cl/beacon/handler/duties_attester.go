@@ -7,9 +7,9 @@ import (
 	"strconv"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
-	state_accessors "github.com/ledgerwatch/erigon/cl/persistence/state"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
+	state_accessors "github.com/ledgerwatch/erigon/v2/cl/persistence/state"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
 )
 
 type attesterDutyResponse struct {

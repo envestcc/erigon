@@ -23,7 +23,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 // TxLookupEntry is a positional metadata to help looking up the data content of

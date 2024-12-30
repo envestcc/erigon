@@ -1,7 +1,7 @@
 package caplinflags
 
 import (
-	"github.com/ledgerwatch/erigon/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
 	"github.com/urfave/cli/v2"
 )
 

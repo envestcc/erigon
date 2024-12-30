@@ -27,7 +27,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/length"
 
 	ethereum "github.com/ledgerwatch/erigon"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/ledgerwatch/erigon/v2/rpc"
 )
 
 // FilterCriteria represents a request to create a new filter.

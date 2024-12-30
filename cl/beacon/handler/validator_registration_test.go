@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/stretchr/testify/require"
 )

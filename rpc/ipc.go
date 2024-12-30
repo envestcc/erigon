@@ -19,7 +19,7 @@ package rpc
 import (
 	"net"
 
-	"github.com/ledgerwatch/erigon/p2p/netutil"
+	"github.com/ledgerwatch/erigon/v2/p2p/netutil"
 	"github.com/ledgerwatch/log/v3"
 )
 

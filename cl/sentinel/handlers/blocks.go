@@ -15,11 +15,11 @@ package handlers
 
 import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/sentinel/communication/ssz_snappy"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/communication/ssz_snappy"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 	"github.com/libp2p/go-libp2p/core/network"
 )
 

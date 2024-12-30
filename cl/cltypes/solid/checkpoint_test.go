@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
 )
 
 var testCheckpoint = solid.NewCheckpointFromParameters(libcommon.HexToHash("0x3"), 69)

@@ -31,10 +31,10 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/datadir"
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/core/state"
+	"github.com/ledgerwatch/erigon/v2/core/vm/evmtypes"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
 )
 
 func TestMemoryGasCost(t *testing.T) {

@@ -29,9 +29,9 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/length"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/turbo/rlphacks"
+	"github.com/ledgerwatch/erigon/v2/common"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/turbo/rlphacks"
 )
 
 func TestV2HashBuilding(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/polygon/bor/borcfg"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/borcfg"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
 
 	"github.com/ledgerwatch/log/v3"
 
@@ -17,17 +17,17 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/consensus"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/eth/protocols/eth"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/polygon/bor"
-	"github.com/ledgerwatch/erigon/polygon/bor/valset"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/stages/mock"
+	"github.com/ledgerwatch/erigon/v2/consensus"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/eth/protocols/eth"
+	"github.com/ledgerwatch/erigon/v2/ethdb/prune"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/valset"
+	"github.com/ledgerwatch/erigon/v2/rlp"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/mock"
 )
 
 type test_heimdall struct {

@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
 	"github.com/stretchr/testify/require"
 )
 

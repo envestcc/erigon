@@ -5,12 +5,12 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/persistence/base_encoding"
-	state_accessors "github.com/ledgerwatch/erigon/cl/persistence/state"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state/shuffling"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/base_encoding"
+	state_accessors "github.com/ledgerwatch/erigon/v2/cl/persistence/state"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state/shuffling"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 )
 
 func (r *HistoricalStatesReader) attestingIndicies(attestation solid.AttestationData, aggregationBits []byte, checkBitsLength bool, mix libcommon.Hash, idxs []uint64) ([]uint64, error) {

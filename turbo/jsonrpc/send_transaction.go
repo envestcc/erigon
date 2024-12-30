@@ -10,8 +10,8 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 	txPoolProto "github.com/ledgerwatch/erigon-lib/gointerfaces/txpool"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/params"
 )
 
 // SendRawTransaction implements eth_sendRawTransaction. Creates new message call transaction or a contract creation for previously-signed transactions.

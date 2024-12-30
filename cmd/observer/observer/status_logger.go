@@ -5,8 +5,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ledgerwatch/erigon/cmd/observer/database"
-	"github.com/ledgerwatch/erigon/cmd/observer/utils"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/database"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/utils"
 	"github.com/ledgerwatch/log/v3"
 )
 

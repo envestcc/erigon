@@ -13,16 +13,16 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/disk"
 	"github.com/ledgerwatch/erigon-lib/common/mem"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/cmp"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/copy"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/manifest"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/sync"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/torrents"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/verify"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/cmp"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/copy"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/manifest"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/sync"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/torrents"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/verify"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 )
 
 func main() {

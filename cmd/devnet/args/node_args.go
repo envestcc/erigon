@@ -10,12 +10,12 @@ import (
 	"strconv"
 
 	"github.com/ledgerwatch/erigon-lib/chain/networkname"
-	"github.com/ledgerwatch/erigon/cmd/devnet/accounts"
-	"github.com/ledgerwatch/erigon/cmd/devnet/requests"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/accounts"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/requests"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/p2p/enode"
+	"github.com/ledgerwatch/erigon/v2/params"
 )
 
 type NodeArgs struct {

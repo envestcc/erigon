@@ -14,12 +14,12 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/length"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/dataflow"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/turbo/adapter"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/dataflow"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync/stages"
+	"github.com/ledgerwatch/erigon/v2/turbo/adapter"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
 )
 
 // UpdateFromDb reads the state of the database and refreshes the state of the body download

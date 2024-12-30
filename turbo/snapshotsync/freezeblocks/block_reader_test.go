@@ -14,9 +14,9 @@ import (
 	"github.com/ledgerwatch/erigon-lib/downloader/snaptype"
 	"github.com/ledgerwatch/erigon-lib/recsplit"
 	"github.com/ledgerwatch/erigon-lib/seg"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	borsnaptype "github.com/ledgerwatch/erigon/polygon/bor/snaptype"
-	"github.com/ledgerwatch/erigon/turbo/testlog"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
+	borsnaptype "github.com/ledgerwatch/erigon/v2/polygon/bor/snaptype"
+	"github.com/ledgerwatch/erigon/v2/turbo/testlog"
 )
 
 func TestBlockReaderLastFrozenSpanIdWhenSegmentFilesArePresent(t *testing.T) {

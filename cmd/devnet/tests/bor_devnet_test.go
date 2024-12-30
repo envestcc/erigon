@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/ledgerwatch/erigon-lib/chain/networkname"
-	accounts_steps "github.com/ledgerwatch/erigon/cmd/devnet/accounts/steps"
-	contracts_steps "github.com/ledgerwatch/erigon/cmd/devnet/contracts/steps"
-	"github.com/ledgerwatch/erigon/cmd/devnet/requests"
-	"github.com/ledgerwatch/erigon/cmd/devnet/services"
+	accounts_steps "github.com/ledgerwatch/erigon/v2/cmd/devnet/accounts/steps"
+	contracts_steps "github.com/ledgerwatch/erigon/v2/cmd/devnet/contracts/steps"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/requests"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/services"
 )
 
 func TestStateSync(t *testing.T) {

@@ -4,8 +4,8 @@ import (
 	geth_params "github.com/ethereum/go-ethereum/params"
 	// geth_crypto "github.com/ethereum/go-ethereum/crypto"
 	erigon_lib_common "github.com/ledgerwatch/erigon-lib/common"
-	erigon_crypto "github.com/ledgerwatch/erigon/crypto"
-	erigon_params "github.com/ledgerwatch/erigon/params"
+	erigon_crypto "github.com/ledgerwatch/erigon/v2/crypto"
+	erigon_params "github.com/ledgerwatch/erigon/v2/params"
 )
 
 func main() {

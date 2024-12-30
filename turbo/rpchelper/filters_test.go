@@ -3,7 +3,7 @@ package rpchelper
 import (
 	"context"
 	"github.com/holiman/uint256"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 	"testing"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
@@ -12,7 +12,7 @@ import (
 
 	types2 "github.com/ledgerwatch/erigon-lib/gointerfaces/types"
 
-	"github.com/ledgerwatch/erigon/eth/filters"
+	"github.com/ledgerwatch/erigon/v2/eth/filters"
 	"github.com/ledgerwatch/log/v3"
 )
 

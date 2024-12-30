@@ -15,14 +15,14 @@ import (
 
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
-	"github.com/ledgerwatch/erigon/turbo/stages/mock"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/rlp"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/rpc/rpccfg"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/mock"
 )
 
 // Gets the latest block number with the latest tag

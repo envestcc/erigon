@@ -11,8 +11,8 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
-	"github.com/ledgerwatch/erigon/polygon/heimdall/simulator"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall/simulator"
 )
 
 //go:embed testdata/v1-000000-000500-borevents.seg

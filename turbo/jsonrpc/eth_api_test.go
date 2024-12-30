@@ -13,15 +13,15 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 
 	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
-	"github.com/ledgerwatch/erigon/turbo/stages/mock"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/rpc/rpccfg"
+	"github.com/ledgerwatch/erigon/v2/turbo/adapter/ethapi"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/mock"
 
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/rpcdaemontest"
 )
 
 func newBaseApiForTest(m *mock.MockSentry) *BaseAPI {

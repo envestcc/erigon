@@ -25,13 +25,13 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/dbutils"
 	"github.com/ledgerwatch/erigon-lib/recsplit"
 	"github.com/ledgerwatch/erigon-lib/seg"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/persistence/beacon_indicies"
-	"github.com/ledgerwatch/erigon/cl/persistence/blob_storage"
-	"github.com/ledgerwatch/erigon/cl/persistence/format/snapshot_format"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/beacon_indicies"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/blob_storage"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/format/snapshot_format"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
 )
 
 var sidecarSSZSize = (&cltypes.BlobSidecar{}).EncodingSizeSSZ()

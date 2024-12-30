@@ -7,7 +7,7 @@ import (
 
 	"github.com/RoaringBitmap/roaring/roaring64"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/rpcdaemontest"
 	"github.com/stretchr/testify/require"
 )
 

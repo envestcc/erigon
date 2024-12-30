@@ -7,9 +7,9 @@ import (
 	"github.com/ledgerwatch/erigon-lib/types/clonable"
 	"github.com/ledgerwatch/erigon-lib/types/ssz"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/merkle_tree"
-	ssz2 "github.com/ledgerwatch/erigon/cl/ssz"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/merkle_tree"
+	ssz2 "github.com/ledgerwatch/erigon/v2/cl/ssz"
 )
 
 const (

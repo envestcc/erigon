@@ -5,8 +5,8 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/turbo/shards"
+	"github.com/ledgerwatch/erigon/v2/core/types/accounts"
+	"github.com/ledgerwatch/erigon/v2/turbo/shards"
 )
 
 // CachedReader is a wrapper for an instance of type StateReader

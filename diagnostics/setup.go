@@ -26,7 +26,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/chain/snapcfg"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	diaglib "github.com/ledgerwatch/erigon-lib/diagnostics"
-	"github.com/ledgerwatch/erigon/turbo/node"
+	"github.com/ledgerwatch/erigon/v2/turbo/node"
 	"github.com/ledgerwatch/log/v3"
 )
 

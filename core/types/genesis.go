@@ -28,9 +28,9 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
-	common2 "github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/params"
+	common2 "github.com/ledgerwatch/erigon/v2/common"
+	"github.com/ledgerwatch/erigon/v2/common/math"
+	"github.com/ledgerwatch/erigon/v2/params"
 )
 
 //go:generate gencodec -type Genesis -field-override genesisSpecMarshaling -out gen_genesis.go

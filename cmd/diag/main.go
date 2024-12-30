@@ -10,14 +10,14 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/cmd/diag/db"
-	"github.com/ledgerwatch/erigon/cmd/diag/downloader"
-	"github.com/ledgerwatch/erigon/cmd/diag/stages"
-	"github.com/ledgerwatch/erigon/cmd/diag/ui"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/sync"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/cmd/diag/db"
+	"github.com/ledgerwatch/erigon/v2/cmd/diag/downloader"
+	"github.com/ledgerwatch/erigon/v2/cmd/diag/stages"
+	"github.com/ledgerwatch/erigon/v2/cmd/diag/ui"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/sync"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 	"github.com/ledgerwatch/log/v3"
 )
 

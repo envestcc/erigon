@@ -7,13 +7,13 @@ import (
 
 	"github.com/Giulio2002/bls"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconevents"
-	"github.com/ledgerwatch/erigon/cl/beacon/synced_data"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/fork"
-	"github.com/ledgerwatch/erigon/cl/pool"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconevents"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/synced_data"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/fork"
+	"github.com/ledgerwatch/erigon/v2/cl/pool"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 )
 
 type blsToExecutionChangeService struct {

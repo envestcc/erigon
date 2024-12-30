@@ -14,7 +14,7 @@ import (
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/graphql/graph/model"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/graphql/graph/model"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )

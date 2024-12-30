@@ -10,13 +10,13 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 	"github.com/ledgerwatch/erigon-lib/kv/rawdbv3"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/systemcontracts"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	borfinality "github.com/ledgerwatch/erigon/polygon/bor/finality"
-	"github.com/ledgerwatch/erigon/polygon/bor/finality/whitelist"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/state"
+	"github.com/ledgerwatch/erigon/v2/core/systemcontracts"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync/stages"
+	borfinality "github.com/ledgerwatch/erigon/v2/polygon/bor/finality"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/finality/whitelist"
+	"github.com/ledgerwatch/erigon/v2/rpc"
 )
 
 // unable to decode supplied params, or an invalid number of parameters

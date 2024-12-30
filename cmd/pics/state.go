@@ -17,17 +17,17 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/accounts/abi/bind"
-	"github.com/ledgerwatch/erigon/accounts/abi/bind/backends"
-	"github.com/ledgerwatch/erigon/cmd/pics/contracts"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/turbo/stages/mock"
-	"github.com/ledgerwatch/erigon/turbo/trie"
-	"github.com/ledgerwatch/erigon/visual"
+	"github.com/ledgerwatch/erigon/v2/accounts/abi/bind"
+	"github.com/ledgerwatch/erigon/v2/accounts/abi/bind/backends"
+	"github.com/ledgerwatch/erigon/v2/cmd/pics/contracts"
+	"github.com/ledgerwatch/erigon/v2/common"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/mock"
+	"github.com/ledgerwatch/erigon/v2/turbo/trie"
+	"github.com/ledgerwatch/erigon/v2/visual"
 )
 
 /*func statePicture(t *trie.Trie, number int, keyCompression int, codeCompressed bool, valCompressed bool,

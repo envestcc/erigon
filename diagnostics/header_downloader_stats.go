@@ -22,7 +22,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ledgerwatch/erigon/dataflow"
+	"github.com/ledgerwatch/erigon/v2/dataflow"
 )
 
 func SetupHeaderDownloadStats(metricsMux *http.ServeMux) {

@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
-	"github.com/ledgerwatch/erigon/turbo/testlog"
+	"github.com/ledgerwatch/erigon/v2/turbo/testlog"
 )
 
 func TestPeerTracker(t *testing.T) {

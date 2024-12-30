@@ -4,8 +4,8 @@ import (
 	"crypto/ecdsa"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/crypto"
 )
 
 const DevAddress = "0x67b1d87101671b127f5f8714789C7192f7ad340e"

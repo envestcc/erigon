@@ -6,8 +6,8 @@ import (
 	"github.com/ledgerwatch/erigon-lib/chain"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/kvcfg"
-	"github.com/ledgerwatch/erigon/cmd/hack/tool"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
+	"github.com/ledgerwatch/erigon/v2/cmd/hack/tool"
+	"github.com/ledgerwatch/erigon/v2/ethdb/prune"
 )
 
 func ChainConfig(db kv.RoDB) (cc *chain.Config) {

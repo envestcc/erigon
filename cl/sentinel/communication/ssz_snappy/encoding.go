@@ -24,8 +24,8 @@ import (
 	"github.com/c2h5oh/datasize"
 	"github.com/golang/snappy"
 	"github.com/ledgerwatch/erigon-lib/types/ssz"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/utils/eth_clock"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/utils/eth_clock"
 )
 
 var writerPool = sync.Pool{

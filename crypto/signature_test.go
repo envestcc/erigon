@@ -24,7 +24,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/common/math"
+	"github.com/ledgerwatch/erigon/v2/common/math"
 )
 
 var (

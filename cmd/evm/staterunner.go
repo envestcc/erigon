@@ -31,11 +31,11 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/eth/tracers/logger"
-	"github.com/ledgerwatch/erigon/tests"
-	"github.com/ledgerwatch/erigon/turbo/trie"
+	"github.com/ledgerwatch/erigon/v2/core/state"
+	"github.com/ledgerwatch/erigon/v2/core/vm"
+	"github.com/ledgerwatch/erigon/v2/eth/tracers/logger"
+	"github.com/ledgerwatch/erigon/v2/tests"
+	"github.com/ledgerwatch/erigon/v2/turbo/trie"
 )
 
 var stateTestCommand = cli.Command{

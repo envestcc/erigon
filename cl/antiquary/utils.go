@@ -7,10 +7,10 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/persistence/beacon_indicies"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state/shuffling"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/beacon_indicies"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state/shuffling"
 )
 
 func getProposerDutiesValue(s *state.CachingBeaconState) []byte {

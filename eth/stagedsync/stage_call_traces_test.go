@@ -13,7 +13,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/temporal/temporaltest"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync/stages"
 	"github.com/ledgerwatch/log/v3"
 )
 

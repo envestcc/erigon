@@ -5,11 +5,11 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
-	"github.com/ledgerwatch/erigon/cl/phase1/execution_client"
-	"github.com/ledgerwatch/erigon/cl/transition/impl/eth2"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/execution_client"
+	"github.com/ledgerwatch/erigon/v2/cl/transition/impl/eth2"
 )
 
 type ForkChoiceStorage interface {

@@ -12,10 +12,10 @@ import (
 	ethereum "github.com/ledgerwatch/erigon"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
-	"github.com/ledgerwatch/erigon/turbo/jsonrpc"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/turbo/adapter/ethapi"
+	"github.com/ledgerwatch/erigon/v2/turbo/jsonrpc"
 )
 
 type ETHEstimateGas struct {

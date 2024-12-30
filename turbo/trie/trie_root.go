@@ -16,8 +16,8 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	dbutils2 "github.com/ledgerwatch/erigon-lib/kv/dbutils"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/turbo/rlphacks"
+	"github.com/ledgerwatch/erigon/v2/core/types/accounts"
+	"github.com/ledgerwatch/erigon/v2/turbo/rlphacks"
 )
 
 /*

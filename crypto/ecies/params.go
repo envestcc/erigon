@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/ledgerwatch/erigon/crypto"
+	ethcrypto "github.com/ledgerwatch/erigon/v2/crypto"
 )
 
 var (

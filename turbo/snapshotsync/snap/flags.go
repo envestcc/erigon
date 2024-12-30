@@ -2,7 +2,7 @@ package snap
 
 import (
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
 )
 
 var (

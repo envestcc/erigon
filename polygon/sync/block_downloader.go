@@ -15,10 +15,10 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/cmp"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/ethconfig/estimate"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
-	"github.com/ledgerwatch/erigon/polygon/p2p"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig/estimate"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/polygon/p2p"
 )
 
 const (

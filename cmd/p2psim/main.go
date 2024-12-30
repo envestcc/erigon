@@ -47,15 +47,15 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/simulations"
-	"github.com/ledgerwatch/erigon/p2p/simulations/adapters"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/p2p"
+	"github.com/ledgerwatch/erigon/v2/p2p/enode"
+	"github.com/ledgerwatch/erigon/v2/p2p/simulations"
+	"github.com/ledgerwatch/erigon/v2/p2p/simulations/adapters"
+	"github.com/ledgerwatch/erigon/v2/rpc"
 )
 
 var client *simulations.Client

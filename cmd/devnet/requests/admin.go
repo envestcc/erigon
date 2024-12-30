@@ -3,7 +3,7 @@ package requests
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon/p2p"
+	"github.com/ledgerwatch/erigon/v2/p2p"
 )
 
 func (reqGen *requestGenerator) AdminNodeInfo() (p2p.NodeInfo, error) {

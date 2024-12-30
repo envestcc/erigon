@@ -16,14 +16,14 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/kvcfg"
 	"github.com/ledgerwatch/erigon-lib/kv/rawdbv3"
 	"github.com/ledgerwatch/erigon-lib/state"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync/freezeblocks"
+	"github.com/ledgerwatch/erigon/v2/turbo/snapshotsync/freezeblocks"
 	"github.com/spf13/cobra"
 
-	"github.com/ledgerwatch/erigon/core/rawdb/rawdbhelpers"
-	reset2 "github.com/ledgerwatch/erigon/core/rawdb/rawdbreset"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
-	"github.com/ledgerwatch/erigon/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb/rawdbhelpers"
+	reset2 "github.com/ledgerwatch/erigon/v2/core/rawdb/rawdbreset"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync/stages"
+	"github.com/ledgerwatch/erigon/v2/ethdb/prune"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
 )
 
 var cmdResetState = &cobra.Command{

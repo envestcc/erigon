@@ -10,15 +10,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
 
 	"github.com/ledgerwatch/erigon-lib/common/dbg"
-	devnet_args "github.com/ledgerwatch/erigon/cmd/devnet/args"
-	"github.com/ledgerwatch/erigon/cmd/devnet/requests"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/params"
-	erigonapp "github.com/ledgerwatch/erigon/turbo/app"
-	erigoncli "github.com/ledgerwatch/erigon/turbo/cli"
+	devnet_args "github.com/ledgerwatch/erigon/v2/cmd/devnet/args"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/requests"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/params"
+	erigonapp "github.com/ledgerwatch/erigon/v2/turbo/app"
+	erigoncli "github.com/ledgerwatch/erigon/v2/turbo/cli"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 )

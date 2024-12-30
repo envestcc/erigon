@@ -10,11 +10,11 @@ import (
 	"sort"
 	"time"
 
-	borsnaptype "github.com/ledgerwatch/erigon/polygon/bor/snaptype"
+	borsnaptype "github.com/ledgerwatch/erigon/v2/polygon/bor/snaptype"
 	"github.com/ledgerwatch/log/v3"
 
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon/polygon/bor"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor"
 
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/dbg"
@@ -24,14 +24,14 @@ import (
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/recsplit"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	coresnaptype "github.com/ledgerwatch/erigon/core/snaptype"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	bortypes "github.com/ledgerwatch/erigon/polygon/bor/types"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	coresnaptype "github.com/ledgerwatch/erigon/v2/core/snaptype"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
+	bortypes "github.com/ledgerwatch/erigon/v2/polygon/bor/types"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/rlp"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
 )
 
 var ErrSpanNotFound = errors.New("span not found")

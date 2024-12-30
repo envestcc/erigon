@@ -6,19 +6,19 @@ import (
 	"io/fs"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/spectest"
+	"github.com/ledgerwatch/erigon/v2/spectest"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/persistence/format/snapshot_format"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/format/snapshot_format"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/types/clonable"
 	"github.com/ledgerwatch/erigon-lib/types/ssz"
 
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v2"
 )

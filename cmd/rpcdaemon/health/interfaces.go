@@ -4,7 +4,7 @@ import (
 	"context"
 	"github.com/ledgerwatch/erigon-lib/common/hexutil"
 
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/ledgerwatch/erigon/v2/rpc"
 )
 
 type NetAPI interface {

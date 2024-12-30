@@ -13,15 +13,15 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/ledgerwatch/erigon/cl/gossip"
-	"github.com/ledgerwatch/erigon/cl/sentinel"
-	"github.com/ledgerwatch/erigon/cl/sentinel/httpreqresp"
+	"github.com/ledgerwatch/erigon/v2/cl/gossip"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/httpreqresp"
 
 	"github.com/ledgerwatch/erigon-lib/diagnostics"
 	"github.com/ledgerwatch/erigon-lib/gointerfaces"
 	sentinelrpc "github.com/ledgerwatch/erigon-lib/gointerfaces/sentinel"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/libp2p/go-libp2p/core/peer"
 )

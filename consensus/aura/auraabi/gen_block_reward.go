@@ -12,10 +12,10 @@ import (
 
 	ethereum "github.com/ledgerwatch/erigon"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/accounts/abi"
-	"github.com/ledgerwatch/erigon/accounts/abi/bind"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/event"
+	"github.com/ledgerwatch/erigon/v2/accounts/abi"
+	"github.com/ledgerwatch/erigon/v2/accounts/abi/bind"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

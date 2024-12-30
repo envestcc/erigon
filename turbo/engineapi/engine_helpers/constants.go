@@ -1,6 +1,6 @@
 package engine_helpers
 
-import "github.com/ledgerwatch/erigon/rpc"
+import "github.com/ledgerwatch/erigon/v2/rpc"
 
 const MaxBuilders = 128
 

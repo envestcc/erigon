@@ -5,7 +5,7 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 	"github.com/ledgerwatch/erigon-lib/types/clonable"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 )
 
 const JustificationBitsLength = 4

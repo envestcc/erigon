@@ -2,7 +2,7 @@ package downloadernat
 
 import (
 	"github.com/anacrolix/torrent"
-	"github.com/ledgerwatch/erigon/p2p/nat"
+	"github.com/ledgerwatch/erigon/v2/p2p/nat"
 	"github.com/ledgerwatch/log/v3"
 )
 

@@ -12,11 +12,11 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/persistence/beacon_indicies"
-	state_accessors "github.com/ledgerwatch/erigon/cl/persistence/state"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/beacon_indicies"
+	state_accessors "github.com/ledgerwatch/erigon/v2/cl/persistence/state"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/pkg/errors"
 )

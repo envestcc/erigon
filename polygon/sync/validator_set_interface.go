@@ -2,7 +2,7 @@ package sync
 
 import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/polygon/bor"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor"
 )
 
 // valset.ValidatorSet abstraction for unit tests

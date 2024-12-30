@@ -11,15 +11,15 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/accounts"
-	"github.com/ledgerwatch/erigon/cmd/devnet/args"
-	"github.com/ledgerwatch/erigon/cmd/devnet/requests"
-	"github.com/ledgerwatch/erigon/diagnostics"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/node/nodecfg"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	enode "github.com/ledgerwatch/erigon/turbo/node"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/accounts"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/args"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/requests"
+	"github.com/ledgerwatch/erigon/v2/diagnostics"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
+	"github.com/ledgerwatch/erigon/v2/node/nodecfg"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
+	enode "github.com/ledgerwatch/erigon/v2/turbo/node"
 )
 
 type Node interface {

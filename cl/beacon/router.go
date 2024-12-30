@@ -8,8 +8,8 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/cors"
-	"github.com/ledgerwatch/erigon/cl/beacon/beacon_router_configuration"
-	"github.com/ledgerwatch/erigon/cl/beacon/handler"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beacon_router_configuration"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/handler"
 	"github.com/ledgerwatch/log/v3"
 )
 

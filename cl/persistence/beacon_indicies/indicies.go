@@ -10,10 +10,10 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/dbutils"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/persistence/base_encoding"
-	"github.com/ledgerwatch/erigon/cl/persistence/format/snapshot_format"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/base_encoding"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/format/snapshot_format"
 	_ "modernc.org/sqlite"
 )
 

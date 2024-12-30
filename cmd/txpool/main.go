@@ -22,17 +22,17 @@ import (
 	"github.com/ledgerwatch/erigon-lib/txpool/txpoolcfg"
 	"github.com/ledgerwatch/erigon-lib/txpool/txpooluitl"
 	"github.com/ledgerwatch/erigon-lib/types"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
-	common2 "github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/consensus/misc"
-	"github.com/ledgerwatch/erigon/ethdb/privateapi"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/rpcdaemontest"
+	common2 "github.com/ledgerwatch/erigon/v2/common"
+	"github.com/ledgerwatch/erigon/v2/consensus/misc"
+	"github.com/ledgerwatch/erigon/v2/ethdb/privateapi"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/common/paths"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/common/paths"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 )
 
 var (

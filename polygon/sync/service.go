@@ -9,13 +9,13 @@ import (
 	"github.com/ledgerwatch/erigon-lib/chain"
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/direct"
-	executionclient "github.com/ledgerwatch/erigon/cl/phase1/execution_client"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/stagedsync"
-	"github.com/ledgerwatch/erigon/p2p/sentry"
-	"github.com/ledgerwatch/erigon/polygon/bor/borcfg"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
-	"github.com/ledgerwatch/erigon/polygon/p2p"
+	executionclient "github.com/ledgerwatch/erigon/v2/cl/phase1/execution_client"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync"
+	"github.com/ledgerwatch/erigon/v2/p2p/sentry"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/borcfg"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/polygon/p2p"
 )
 
 type Service interface {

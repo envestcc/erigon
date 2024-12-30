@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/cmd/observer/database"
-	"github.com/ledgerwatch/erigon/cmd/observer/observer"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/database"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/observer"
 )
 
 type ClientsReportEntry struct {

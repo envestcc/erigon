@@ -16,9 +16,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/dbg"
 
-	"github.com/ledgerwatch/erigon/cmd/hack/tool"
-	"github.com/ledgerwatch/erigon/common/debug"
-	"github.com/ledgerwatch/erigon/core/vm"
+	"github.com/ledgerwatch/erigon/v2/cmd/hack/tool"
+	"github.com/ledgerwatch/erigon/v2/common/debug"
+	"github.com/ledgerwatch/erigon/v2/core/vm"
 )
 
 const (

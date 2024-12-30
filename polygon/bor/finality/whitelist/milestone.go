@@ -5,9 +5,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/metrics"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/polygon/bor/finality/flags"
-	"github.com/ledgerwatch/erigon/polygon/bor/finality/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/finality/flags"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/finality/rawdb"
 )
 
 type milestone struct {

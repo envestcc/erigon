@@ -32,7 +32,7 @@ import (
 	"github.com/urfave/cli/v2"
 
 	"github.com/ledgerwatch/erigon-lib/common/dir"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 )
 
 func SetupLogsAccess(ctx *cli.Context, metricsMux *http.ServeMux) {

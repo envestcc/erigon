@@ -3,7 +3,7 @@ package snaptype_test
 import (
 	"testing"
 
-	"github.com/ledgerwatch/erigon/core/snaptype"
+	"github.com/ledgerwatch/erigon/v2/core/snaptype"
 )
 
 func TestEnumeration(t *testing.T) {

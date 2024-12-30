@@ -5,7 +5,7 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/types/ssz"
-	ssz2 "github.com/ledgerwatch/erigon/cl/ssz"
+	ssz2 "github.com/ledgerwatch/erigon/v2/cl/ssz"
 )
 
 type IterableSSZ[T any] interface {

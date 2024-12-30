@@ -7,12 +7,12 @@ import (
 	"net/http"
 
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/sentinel"
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/gossip"
-	"github.com/ledgerwatch/erigon/cl/phase1/network/services"
-	"github.com/ledgerwatch/erigon/cl/phase1/network/subnets"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/gossip"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/network/services"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/network/subnets"
 	"github.com/ledgerwatch/log/v3"
 )
 

@@ -26,10 +26,10 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
 	ethereum "github.com/ledgerwatch/erigon"
-	"github.com/ledgerwatch/erigon/accounts/abi"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/event"
+	"github.com/ledgerwatch/erigon/v2/accounts/abi"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/event"
 )
 
 // SignerFn is a signer function callback when a contract requires a method to

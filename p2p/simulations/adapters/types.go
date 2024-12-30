@@ -24,12 +24,12 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/node"
-	"github.com/ledgerwatch/erigon/p2p"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/enr"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/node"
+	"github.com/ledgerwatch/erigon/v2/p2p"
+	"github.com/ledgerwatch/erigon/v2/p2p/enode"
+	"github.com/ledgerwatch/erigon/v2/p2p/enr"
+	"github.com/ledgerwatch/erigon/v2/rpc"
 	"github.com/ledgerwatch/log/v3"
 
 	"github.com/gorilla/websocket"

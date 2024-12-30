@@ -7,8 +7,8 @@ import (
 	"time"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/polygon/bor"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor"
 )
 
 //go:generate mockgen -typed=true -destination=./canonical_chain_builder_mock.go -package=sync . CanonicalChainBuilder

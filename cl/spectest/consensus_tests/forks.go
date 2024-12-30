@@ -2,12 +2,12 @@ package consensus_tests
 
 import (
 	"fmt"
-	"github.com/ledgerwatch/erigon/spectest"
+	"github.com/ledgerwatch/erigon/v2/spectest"
 	"io/fs"
 	"os"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

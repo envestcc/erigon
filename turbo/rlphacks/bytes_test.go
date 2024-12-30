@@ -6,7 +6,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/ledgerwatch/erigon/v2/rlp"
 )
 
 func TestFastDoubleRlpForByteArrays(t *testing.T) {

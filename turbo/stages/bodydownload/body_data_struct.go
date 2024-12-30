@@ -5,11 +5,11 @@ import (
 	"github.com/google/btree"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/length"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/consensus"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/consensus"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 // TripleHash is type to be used for the mapping between TxHash, UncleHash, and WithdrawalsHash to the block header

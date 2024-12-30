@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 func NewTrackingFetcher(fetcher Fetcher, peerTracker PeerTracker) Fetcher {

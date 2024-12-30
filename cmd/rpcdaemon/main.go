@@ -7,14 +7,14 @@ import (
 	"os"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/cli"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/jsonrpc"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/cli"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/turbo/jsonrpc"
 	"github.com/spf13/cobra"
 
-	_ "github.com/ledgerwatch/erigon/core/snaptype"        //hack
-	_ "github.com/ledgerwatch/erigon/polygon/bor/snaptype" //hack
+	_ "github.com/ledgerwatch/erigon/v2/core/snaptype"        //hack
+	_ "github.com/ledgerwatch/erigon/v2/polygon/bor/snaptype" //hack
 )
 
 func main() {

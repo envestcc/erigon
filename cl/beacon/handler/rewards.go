@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/persistence/beacon_indicies"
-	state_accessors "github.com/ledgerwatch/erigon/cl/persistence/state"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/beacon_indicies"
+	state_accessors "github.com/ledgerwatch/erigon/v2/cl/persistence/state"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 )
 
 type blockRewardsResponse struct {

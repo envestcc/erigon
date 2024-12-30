@@ -24,7 +24,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/chain"
 	"github.com/ledgerwatch/erigon-lib/common/fixedgas"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 // CalcExcessBlobGas implements calc_excess_blob_gas from EIP-4844

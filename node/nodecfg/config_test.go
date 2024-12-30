@@ -24,8 +24,8 @@ import (
 	"testing"
 
 	"github.com/ledgerwatch/erigon-lib/common/datadir"
-	node2 "github.com/ledgerwatch/erigon/node"
-	"github.com/ledgerwatch/erigon/node/nodecfg"
+	node2 "github.com/ledgerwatch/erigon/v2/node"
+	"github.com/ledgerwatch/erigon/v2/node/nodecfg"
 	"github.com/ledgerwatch/log/v3"
 )
 

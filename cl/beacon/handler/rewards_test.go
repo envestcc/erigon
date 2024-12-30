@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/common"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/stretchr/testify/require"
 )

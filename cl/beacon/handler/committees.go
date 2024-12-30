@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
-	"github.com/ledgerwatch/erigon/cl/persistence/beacon_indicies"
-	state_accessors "github.com/ledgerwatch/erigon/cl/persistence/state"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/beacon_indicies"
+	state_accessors "github.com/ledgerwatch/erigon/v2/cl/persistence/state"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
 )
 
 type committeeResponse struct {

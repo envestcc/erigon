@@ -15,10 +15,10 @@ import (
 	"go.uber.org/mock/gomock"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
-	"github.com/ledgerwatch/erigon/polygon/p2p"
-	"github.com/ledgerwatch/erigon/turbo/testlog"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/polygon/p2p"
+	"github.com/ledgerwatch/erigon/v2/turbo/testlog"
 )
 
 func newBlockDownloaderTest(t *testing.T) *blockDownloaderTest {

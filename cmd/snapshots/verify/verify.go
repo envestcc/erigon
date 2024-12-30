@@ -10,9 +10,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/downloader"
 	"github.com/ledgerwatch/erigon-lib/downloader/snaptype"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/flags"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/sync"
-	"github.com/ledgerwatch/erigon/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/flags"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/sync"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
 )
 
 var (

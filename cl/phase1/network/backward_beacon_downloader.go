@@ -11,11 +11,11 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/persistence/base_encoding"
-	"github.com/ledgerwatch/erigon/cl/persistence/beacon_indicies"
-	"github.com/ledgerwatch/erigon/cl/phase1/execution_client"
-	"github.com/ledgerwatch/erigon/cl/rpc"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/base_encoding"
+	"github.com/ledgerwatch/erigon/v2/cl/persistence/beacon_indicies"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/execution_client"
+	"github.com/ledgerwatch/erigon/v2/cl/rpc"
 )
 
 // Whether the reverse downloader arrived at expected height or condition.

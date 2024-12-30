@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/devnet"
-	"github.com/ledgerwatch/erigon/cmd/devnet/devnetutils"
-	"github.com/ledgerwatch/erigon/cmd/devnet/requests"
-	"github.com/ledgerwatch/erigon/cmd/devnet/scenarios"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/devnet"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/devnetutils"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/requests"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/scenarios"
+	"github.com/ledgerwatch/erigon/v2/rpc"
 	"github.com/ledgerwatch/log/v3"
 )
 

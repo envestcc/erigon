@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/ledgerwatch/erigon-lib/types/ssz"
-	"github.com/ledgerwatch/erigon/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
 )
 
 type BeaconResponse struct {

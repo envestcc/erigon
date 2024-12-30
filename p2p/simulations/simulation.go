@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/ledgerwatch/erigon/p2p/enode"
+	"github.com/ledgerwatch/erigon/v2/p2p/enode"
 )
 
 // Simulation provides a framework for running actions in a simulated network

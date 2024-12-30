@@ -14,7 +14,7 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
 	"github.com/jedib0t/go-pretty/v6/text"
-	"github.com/ledgerwatch/erigon/cmd/diag/flags"
+	"github.com/ledgerwatch/erigon/v2/cmd/diag/flags"
 	"github.com/urfave/cli/v2"
 )
 

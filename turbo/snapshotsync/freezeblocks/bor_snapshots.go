@@ -8,10 +8,10 @@ import (
 	"reflect"
 
 	"github.com/ledgerwatch/erigon-lib/downloader/snaptype"
-	"github.com/ledgerwatch/erigon/cmd/hack/tool/fromdb"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	borsnaptype "github.com/ledgerwatch/erigon/polygon/bor/snaptype"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/cmd/hack/tool/fromdb"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
+	borsnaptype "github.com/ledgerwatch/erigon/v2/polygon/bor/snaptype"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
 	"github.com/ledgerwatch/log/v3"
 )
 

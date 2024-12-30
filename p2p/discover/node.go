@@ -20,7 +20,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/ledgerwatch/erigon/p2p/enode"
+	"github.com/ledgerwatch/erigon/v2/p2p/enode"
 )
 
 // node represents a host on the network.

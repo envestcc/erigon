@@ -9,12 +9,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/accounts"
-	"github.com/ledgerwatch/erigon/cmd/devnet/admin"
-	"github.com/ledgerwatch/erigon/cmd/devnet/contracts/steps"
-	"github.com/ledgerwatch/erigon/cmd/devnet/requests"
-	"github.com/ledgerwatch/erigon/cmd/devnet/services"
-	"github.com/ledgerwatch/erigon/cmd/devnet/transactions"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/accounts"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/admin"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/contracts/steps"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/requests"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/services"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/transactions"
 )
 
 func testDynamicTx(t *testing.T, ctx context.Context) {

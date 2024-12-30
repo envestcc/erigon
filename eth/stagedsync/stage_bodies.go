@@ -14,14 +14,14 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/metrics"
 	"github.com/ledgerwatch/erigon-lib/diagnostics"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/rawdb/blockio"
-	"github.com/ledgerwatch/erigon/dataflow"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/turbo/adapter"
-	"github.com/ledgerwatch/erigon/turbo/services"
-	"github.com/ledgerwatch/erigon/turbo/stages/bodydownload"
-	"github.com/ledgerwatch/erigon/turbo/stages/headerdownload"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb/blockio"
+	"github.com/ledgerwatch/erigon/v2/dataflow"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync/stages"
+	"github.com/ledgerwatch/erigon/v2/turbo/adapter"
+	"github.com/ledgerwatch/erigon/v2/turbo/services"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/bodydownload"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/headerdownload"
 )
 
 const requestLoopCutOff int = 1

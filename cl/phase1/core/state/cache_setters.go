@@ -1,6 +1,6 @@
 package state
 
-import "github.com/ledgerwatch/erigon/cl/cltypes/solid"
+import "github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
 
 // Below are setters.
 

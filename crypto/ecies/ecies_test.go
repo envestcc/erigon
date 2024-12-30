@@ -41,7 +41,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/ledgerwatch/erigon/v2/crypto"
 )
 
 var dumpEnc bool

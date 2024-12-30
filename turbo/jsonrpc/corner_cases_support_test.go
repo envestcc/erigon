@@ -10,12 +10,12 @@ import (
 
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/ledgerwatch/erigon/v2/rpc"
 )
 
 // TestNotFoundMustReturnNil - next methods - when record not found in db - must return nil instead of error
-// see https://github.com/ledgerwatch/erigon/issues/1645
+// see https://github.com/ledgerwatch/erigon/v2/issues/1645
 func TestNotFoundMustReturnNil(t *testing.T) {
 	require := require.New(t)
 	m, _, _ := rpcdaemontest.CreateTestSentry(t)

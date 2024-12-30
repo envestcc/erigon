@@ -6,8 +6,8 @@ import (
 	"math"
 
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/polygon/bor/snaptype"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/snaptype"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
 )
 
 // PruneBorBlocks - delete [1, to) old blocks after moving it to snapshots.

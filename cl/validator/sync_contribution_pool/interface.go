@@ -2,8 +2,8 @@ package sync_contribution_pool
 
 import (
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
 )
 
 // SyncContributionPool is an interface for managing sync committee contributions and messages.

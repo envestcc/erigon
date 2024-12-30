@@ -17,7 +17,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
 
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/ledgerwatch/erigon/v2/common"
 )
 
 func IndexStats(chaindata string, indexBucket string, statsFile string) error {

@@ -22,7 +22,7 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common/math"
+	"github.com/ledgerwatch/erigon/v2/common/math"
 )
 
 func TestBlockNumberJSONUnmarshal(t *testing.T) {

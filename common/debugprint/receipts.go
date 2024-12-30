@@ -3,7 +3,7 @@ package debugprint
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 // nolint

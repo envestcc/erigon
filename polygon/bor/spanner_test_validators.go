@@ -3,7 +3,7 @@ package bor
 import (
 	"github.com/ledgerwatch/erigon-lib/chain/networkname"
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/polygon/bor/valset"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/valset"
 )
 
 // NetworkNameVals is a map of network name to validator set for tests/devnets

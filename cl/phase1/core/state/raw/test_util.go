@@ -3,8 +3,8 @@ package raw
 import (
 	_ "embed"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 )
 
 //go:embed testdata/state.ssz_snappy

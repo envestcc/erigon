@@ -5,7 +5,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutil"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon/turbo/engineapi/engine_types"
+	"github.com/ledgerwatch/erigon/v2/turbo/engineapi/engine_types"
 )
 
 // EngineAPI Beacon chain communication endpoint

@@ -25,22 +25,22 @@ import (
 	"testing"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/tests"
-	"github.com/ledgerwatch/erigon/turbo/stages/mock"
+	"github.com/ledgerwatch/erigon/v2/core"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/vm"
+	"github.com/ledgerwatch/erigon/v2/core/vm/evmtypes"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/tests"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/mock"
 	"github.com/stretchr/testify/require"
 
 	"github.com/holiman/uint256"
 
 	// Force-load native and js packages, to trigger registration
-	"github.com/ledgerwatch/erigon/eth/tracers"
-	_ "github.com/ledgerwatch/erigon/eth/tracers/js"
-	_ "github.com/ledgerwatch/erigon/eth/tracers/native"
+	"github.com/ledgerwatch/erigon/v2/eth/tracers"
+	_ "github.com/ledgerwatch/erigon/v2/eth/tracers/js"
+	_ "github.com/ledgerwatch/erigon/v2/eth/tracers/native"
 )
 
 func TestPrestateTracerCreate2(t *testing.T) {

@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cmd/observer/database"
-	"github.com/ledgerwatch/erigon/cmd/observer/observer"
-	"github.com/ledgerwatch/erigon/cmd/observer/reports"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/database"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/observer"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/reports"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/params"
 	"github.com/ledgerwatch/log/v3"
 )
 

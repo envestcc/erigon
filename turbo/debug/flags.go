@@ -34,8 +34,8 @@ import (
 	"github.com/urfave/cli/v2"
 	"gopkg.in/yaml.v2"
 
-	"github.com/ledgerwatch/erigon/common/fdlimit"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/common/fdlimit"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 )
 
 var (

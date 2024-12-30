@@ -9,7 +9,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/txpool"
 	"google.golang.org/grpc/status"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 // Coinbase implements eth_coinbase. Returns the current client coinbase address.

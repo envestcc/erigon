@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/ledgerwatch/erigon/v2/rpc"
 )
 
 func checkBlockNumber(blockNumber rpc.BlockNumber, api EthAPI) error {

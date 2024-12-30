@@ -1,6 +1,6 @@
 package eth2
 
-import "github.com/ledgerwatch/erigon/cl/transition/machine"
+import "github.com/ledgerwatch/erigon/v2/cl/transition/machine"
 
 type Impl = impl
 

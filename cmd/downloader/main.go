@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/ledgerwatch/erigon/core/snaptype"        //hack
-	_ "github.com/ledgerwatch/erigon/polygon/bor/snaptype" //hack
+	_ "github.com/ledgerwatch/erigon/v2/core/snaptype"        //hack
+	_ "github.com/ledgerwatch/erigon/v2/polygon/bor/snaptype" //hack
 
 	"github.com/anacrolix/torrent/metainfo"
 	"github.com/c2h5oh/datasize"
@@ -40,14 +40,14 @@ import (
 	"google.golang.org/grpc/keepalive"
 	"google.golang.org/grpc/reflection"
 
-	"github.com/ledgerwatch/erigon/cmd/downloader/downloadernat"
-	"github.com/ledgerwatch/erigon/cmd/hack/tool"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/common/paths"
-	"github.com/ledgerwatch/erigon/p2p/nat"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/cmd/downloader/downloadernat"
+	"github.com/ledgerwatch/erigon/v2/cmd/hack/tool"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/common/paths"
+	"github.com/ledgerwatch/erigon/v2/p2p/nat"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 )
 
 func main() {

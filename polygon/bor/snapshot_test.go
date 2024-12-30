@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/polygon/bor"
-	"github.com/ledgerwatch/erigon/polygon/bor/valset"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/valset"
 )
 
 const (

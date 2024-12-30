@@ -5,8 +5,8 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
 )
 
 // Web3API provides interfaces for the web3_ RPC commands

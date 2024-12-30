@@ -14,7 +14,7 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/cmp"
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/ledgerwatch/erigon/v2/crypto"
 )
 
 func makeCheckpoint(start uint64, len uint) *Checkpoint {

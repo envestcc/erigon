@@ -14,10 +14,10 @@
 package handlers
 
 import (
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/sentinel/communication/ssz_snappy"
-	"github.com/ledgerwatch/erigon/p2p/enr"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/communication/ssz_snappy"
+	"github.com/ledgerwatch/erigon/v2/p2p/enr"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/libp2p/go-libp2p/core/network"
 )

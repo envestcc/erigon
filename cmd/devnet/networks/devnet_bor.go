@@ -7,15 +7,15 @@ import (
 	"github.com/ledgerwatch/log/v3"
 
 	"github.com/ledgerwatch/erigon-lib/chain/networkname"
-	"github.com/ledgerwatch/erigon/cmd/devnet/accounts"
-	"github.com/ledgerwatch/erigon/cmd/devnet/args"
-	"github.com/ledgerwatch/erigon/cmd/devnet/devnet"
-	account_services "github.com/ledgerwatch/erigon/cmd/devnet/services/accounts"
-	"github.com/ledgerwatch/erigon/cmd/devnet/services/polygon"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/polygon/bor/borcfg"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/accounts"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/args"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/devnet"
+	account_services "github.com/ledgerwatch/erigon/v2/cmd/devnet/services/accounts"
+	"github.com/ledgerwatch/erigon/v2/cmd/devnet/services/polygon"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/params"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/borcfg"
 )
 
 func NewBorDevnetWithoutHeimdall(

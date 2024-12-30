@@ -8,7 +8,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/temporal/historyv2"
 
-	"github.com/ledgerwatch/erigon/ethdb"
+	"github.com/ledgerwatch/erigon/v2/ethdb"
 )
 
 // GetModifiedAccounts returns a list of addresses that were modified in the block range

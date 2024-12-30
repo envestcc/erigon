@@ -8,7 +8,7 @@ import (
 	"strconv"
 
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/sentinel"
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconhttp"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconhttp"
 )
 
 /*

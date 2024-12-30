@@ -1,7 +1,7 @@
 package spectest
 
 import (
-	"github.com/ledgerwatch/erigon/cl/transition/machine"
+	"github.com/ledgerwatch/erigon/v2/cl/transition/machine"
 	"io/fs"
 	"path/filepath"
 	"testing"

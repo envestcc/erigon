@@ -10,7 +10,7 @@ import (
 	ethereum "github.com/ledgerwatch/erigon"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 func Compare(expected types.Log, actual types.Log) ([]error, bool) {

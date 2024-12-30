@@ -4,8 +4,8 @@ import (
 	_ "embed"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/beacon/beacontest"
-	"github.com/ledgerwatch/erigon/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beacontest"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
 )
 
 func TestHarnessPhase0(t *testing.T) {

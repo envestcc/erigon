@@ -3,8 +3,8 @@ package services
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
 )
 
 // Note: BlobSidecarService and BlockService are tested in spectests

@@ -3,13 +3,13 @@ package raw
 import (
 	"fmt"
 
-	ssz2 "github.com/ledgerwatch/erigon/cl/ssz"
+	ssz2 "github.com/ledgerwatch/erigon/v2/cl/ssz"
 
 	"github.com/ledgerwatch/erigon-lib/types/clonable"
 	"github.com/ledgerwatch/erigon-lib/types/ssz"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
 )
 
 // BlockRoot computes the block root for the state.

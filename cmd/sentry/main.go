@@ -8,12 +8,12 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/datadir"
 	"github.com/spf13/cobra"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/common/paths"
-	"github.com/ledgerwatch/erigon/p2p/sentry"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
-	node2 "github.com/ledgerwatch/erigon/turbo/node"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/common/paths"
+	"github.com/ledgerwatch/erigon/v2/p2p/sentry"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
+	node2 "github.com/ledgerwatch/erigon/v2/turbo/node"
 )
 
 // generate the messages

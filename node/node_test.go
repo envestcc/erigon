@@ -25,9 +25,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/datadir"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/node/nodecfg"
-	"github.com/ledgerwatch/erigon/p2p"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/node/nodecfg"
+	"github.com/ledgerwatch/erigon/v2/p2p"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/stretchr/testify/require"
 )

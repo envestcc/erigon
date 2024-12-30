@@ -6,9 +6,9 @@ import (
 	"fmt"
 
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
-	"github.com/ledgerwatch/erigon/p2p"
+	"github.com/ledgerwatch/erigon/v2/p2p"
 
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
 )
 
 // AdminAPI the interface for the admin_* RPC commands.

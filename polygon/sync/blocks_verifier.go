@@ -1,6 +1,6 @@
 package sync
 
-import "github.com/ledgerwatch/erigon/core/types"
+import "github.com/ledgerwatch/erigon/v2/core/types"
 
 type BlocksVerifier func(blocks []*types.Block) error
 

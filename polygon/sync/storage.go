@@ -7,7 +7,7 @@ import (
 
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 //go:generate mockgen -typed=true -destination=./storage_mock.go -package=sync . Storage

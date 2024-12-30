@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ledgerwatch/erigon/cmd/state/commands"
+	"github.com/ledgerwatch/erigon/v2/cmd/state/commands"
 )
 
 func main() {

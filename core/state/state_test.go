@@ -29,8 +29,8 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	checker "gopkg.in/check.v1"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/ledgerwatch/erigon/v2/core/types/accounts"
+	"github.com/ledgerwatch/erigon/v2/crypto"
 )
 
 var toAddr = common.BytesToAddress

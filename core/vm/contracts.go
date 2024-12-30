@@ -33,12 +33,12 @@ import (
 	"github.com/ledgerwatch/erigon-lib/crypto/blake2b"
 	libkzg "github.com/ledgerwatch/erigon-lib/crypto/kzg"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/crypto/bn256"
-	"github.com/ledgerwatch/erigon/crypto/secp256r1"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/ledgerwatch/erigon/v2/common"
+	"github.com/ledgerwatch/erigon/v2/common/math"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/crypto/bn256"
+	"github.com/ledgerwatch/erigon/v2/crypto/secp256r1"
+	"github.com/ledgerwatch/erigon/v2/params"
 
 	//lint:ignore SA1019 Needed for precompile
 	"golang.org/x/crypto/ripemd160"

@@ -1,8 +1,8 @@
 package subnets
 
 import (
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
 )
 
 // def compute_subnets_for_sync_committee(state: BeaconState, validator_index: ValidatorIndex) -> Set[uint64]:

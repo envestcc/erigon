@@ -28,7 +28,7 @@ import (
 	"strings"
 
 	"github.com/c2h5oh/datasize"
-	"github.com/ledgerwatch/erigon/common/math"
+	"github.com/ledgerwatch/erigon/v2/common/math"
 	"github.com/urfave/cli/v2"
 )
 

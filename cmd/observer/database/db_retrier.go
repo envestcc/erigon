@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ledgerwatch/erigon/cmd/observer/utils"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/utils"
 	"github.com/ledgerwatch/log/v3"
 )
 

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/consensus/ethash"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
+	"github.com/ledgerwatch/erigon/v2/consensus/ethash"
+	"github.com/ledgerwatch/erigon/v2/rpc/rpccfg"
 
 	"github.com/ledgerwatch/log/v3"
 	"github.com/stretchr/testify/require"
@@ -14,11 +14,11 @@ import (
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/txpool"
 
 	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
-	"github.com/ledgerwatch/erigon/turbo/stages/mock"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/ledgerwatch/erigon/v2/core/types"
+	"github.com/ledgerwatch/erigon/v2/rlp"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/turbo/stages/mock"
 )
 
 func TestPendingBlock(t *testing.T) {

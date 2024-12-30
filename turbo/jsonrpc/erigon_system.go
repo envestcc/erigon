@@ -8,11 +8,11 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/forkid"
-	borfinality "github.com/ledgerwatch/erigon/polygon/bor/finality"
-	"github.com/ledgerwatch/erigon/polygon/bor/finality/whitelist"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
+	"github.com/ledgerwatch/erigon/v2/core/forkid"
+	borfinality "github.com/ledgerwatch/erigon/v2/polygon/bor/finality"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/finality/whitelist"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/turbo/rpchelper"
 )
 
 // Forks is a data type to record a list of forks passed by this node

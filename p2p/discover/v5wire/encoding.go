@@ -28,10 +28,10 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/ledgerwatch/erigon/common/mclock"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/enr"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/ledgerwatch/erigon/v2/common/mclock"
+	"github.com/ledgerwatch/erigon/v2/p2p/enode"
+	"github.com/ledgerwatch/erigon/v2/p2p/enr"
+	"github.com/ledgerwatch/erigon/v2/rlp"
 )
 
 // TODO concurrent WHOAREYOU tie-breaker

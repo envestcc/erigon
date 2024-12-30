@@ -6,8 +6,8 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/chain"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/core/rawdb/blockio"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
+	"github.com/ledgerwatch/erigon/v2/core/rawdb/blockio"
+	"github.com/ledgerwatch/erigon/v2/eth/stagedsync/stages"
 	"github.com/ledgerwatch/log/v3"
 )
 

@@ -3,7 +3,7 @@ package heimdall
 import (
 	"github.com/google/btree"
 
-	"github.com/ledgerwatch/erigon/polygon/bor/valset"
+	"github.com/ledgerwatch/erigon/v2/polygon/bor/valset"
 )
 
 type Span struct {

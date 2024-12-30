@@ -8,7 +8,7 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
-	"github.com/ledgerwatch/erigon/core/state"
+	"github.com/ledgerwatch/erigon/v2/core/state"
 )
 
 const Geth = "geth"

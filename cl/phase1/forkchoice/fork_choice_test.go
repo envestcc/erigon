@@ -9,24 +9,24 @@ import (
 
 	"github.com/spf13/afero"
 
-	"github.com/ledgerwatch/erigon/cl/antiquary/tests"
-	"github.com/ledgerwatch/erigon/cl/beacon/beacon_router_configuration"
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconevents"
-	"github.com/ledgerwatch/erigon/cl/beacon/synced_data"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
-	"github.com/ledgerwatch/erigon/cl/phase1/forkchoice"
-	"github.com/ledgerwatch/erigon/cl/phase1/forkchoice/fork_graph"
-	"github.com/ledgerwatch/erigon/cl/pool"
-	"github.com/ledgerwatch/erigon/cl/transition"
+	"github.com/ledgerwatch/erigon/v2/cl/antiquary/tests"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beacon_router_configuration"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconevents"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/synced_data"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/forkchoice"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/forkchoice/fork_graph"
+	"github.com/ledgerwatch/erigon/v2/cl/pool"
+	"github.com/ledgerwatch/erigon/v2/cl/transition"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 )
 
 //go:embed test_data/anchor_state.ssz_snappy

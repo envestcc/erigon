@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ledgerwatch/erigon/tests/fuzzers/difficulty"
+	"github.com/ledgerwatch/erigon/v2/tests/fuzzers/difficulty"
 )
 
 func main() {

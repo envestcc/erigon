@@ -32,12 +32,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/turbo/testlog"
+	"github.com/ledgerwatch/erigon/v2/turbo/testlog"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/p2p/discover/v4wire"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/enr"
+	"github.com/ledgerwatch/erigon/v2/p2p/discover/v4wire"
+	"github.com/ledgerwatch/erigon/v2/p2p/enode"
+	"github.com/ledgerwatch/erigon/v2/p2p/enr"
 )
 
 // shared test variables
@@ -548,7 +548,7 @@ func TestUDPv4_EIP868(t *testing.T) {
 
 // This test verifies that a small network of nodes can boot up into a healthy state.
 func TestUDPv4_smallNetConvergence(t *testing.T) {
-	t.Skip("FIXME: https://github.com/ledgerwatch/erigon/issues/8731")
+	t.Skip("FIXME: https://github.com/ledgerwatch/erigon/v2/issues/8731")
 
 	t.Parallel()
 	logger := log.New()

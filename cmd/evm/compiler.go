@@ -23,7 +23,7 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/cmd/evm/internal/compiler"
+	"github.com/ledgerwatch/erigon/v2/cmd/evm/internal/compiler"
 )
 
 var compileCommand = cli.Command{

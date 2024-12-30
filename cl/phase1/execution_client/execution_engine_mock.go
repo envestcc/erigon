@@ -15,9 +15,9 @@ import (
 	reflect "reflect"
 
 	common "github.com/ledgerwatch/erigon-lib/common"
-	cltypes "github.com/ledgerwatch/erigon/cl/cltypes"
-	types "github.com/ledgerwatch/erigon/core/types"
-	engine_types "github.com/ledgerwatch/erigon/turbo/engineapi/engine_types"
+	cltypes "github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	types "github.com/ledgerwatch/erigon/v2/core/types"
+	engine_types "github.com/ledgerwatch/erigon/v2/turbo/engineapi/engine_types"
 	gomock "go.uber.org/mock/gomock"
 )
 

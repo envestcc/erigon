@@ -11,7 +11,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/dbutils"
 	historyv22 "github.com/ledgerwatch/erigon-lib/kv/temporal/historyv2"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/ledgerwatch/erigon/v2/core/types/accounts"
 )
 
 // ChangeSetWriter is a mock StateWriter that accumulates changes in-memory into ChangeSets.

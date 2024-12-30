@@ -3,7 +3,7 @@ package aurainterfaces
 import (
 	"github.com/holiman/uint256"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/consensus"
+	"github.com/ledgerwatch/erigon/v2/consensus"
 )
 
 // see openethereum/crates/ethcore/res/contracts/block_reward.json

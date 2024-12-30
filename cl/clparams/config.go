@@ -27,7 +27,7 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"gopkg.in/yaml.v2"
 
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/ledgerwatch/erigon/v2/cl/utils"
 )
 
 type CaplinConfig struct {

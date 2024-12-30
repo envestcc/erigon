@@ -16,11 +16,11 @@ import (
 	"github.com/ledgerwatch/erigon-lib/chain/snapcfg"
 	"github.com/ledgerwatch/erigon-lib/common/background"
 	"github.com/ledgerwatch/erigon-lib/downloader/snaptype"
-	"github.com/ledgerwatch/erigon/cmd/snapshots/sync"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	borsnaptype "github.com/ledgerwatch/erigon/polygon/bor/snaptype"
-	"github.com/ledgerwatch/erigon/polygon/heimdall"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync/freezeblocks"
+	"github.com/ledgerwatch/erigon/v2/cmd/snapshots/sync"
+	"github.com/ledgerwatch/erigon/v2/eth/ethconfig"
+	borsnaptype "github.com/ledgerwatch/erigon/v2/polygon/bor/snaptype"
+	"github.com/ledgerwatch/erigon/v2/polygon/heimdall"
+	"github.com/ledgerwatch/erigon/v2/turbo/snapshotsync/freezeblocks"
 )
 
 type HeimdallSimulator struct {

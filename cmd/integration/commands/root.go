@@ -16,10 +16,10 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/kvcfg"
 	kv2 "github.com/ledgerwatch/erigon-lib/kv/mdbx"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/migrations"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/ledgerwatch/erigon/v2/cmd/utils"
+	"github.com/ledgerwatch/erigon/v2/migrations"
+	"github.com/ledgerwatch/erigon/v2/turbo/debug"
+	"github.com/ledgerwatch/erigon/v2/turbo/logging"
 )
 
 func expandHomeDir(dirpath string) string {

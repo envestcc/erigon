@@ -10,15 +10,15 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/types/ssz"
-	mockSync "github.com/ledgerwatch/erigon/cl/beacon/synced_data/mock_services"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/solid"
-	"github.com/ledgerwatch/erigon/cl/phase1/core/state"
-	mockState "github.com/ledgerwatch/erigon/cl/phase1/core/state/mock_services"
-	"github.com/ledgerwatch/erigon/cl/phase1/forkchoice/mock_services"
-	"github.com/ledgerwatch/erigon/cl/utils/eth_clock"
-	mockCommittee "github.com/ledgerwatch/erigon/cl/validator/committee_subscription/mock_services"
+	mockSync "github.com/ledgerwatch/erigon/v2/cl/beacon/synced_data/mock_services"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes/solid"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/core/state"
+	mockState "github.com/ledgerwatch/erigon/v2/cl/phase1/core/state/mock_services"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/forkchoice/mock_services"
+	"github.com/ledgerwatch/erigon/v2/cl/utils/eth_clock"
+	mockCommittee "github.com/ledgerwatch/erigon/v2/cl/validator/committee_subscription/mock_services"
 )
 
 var (

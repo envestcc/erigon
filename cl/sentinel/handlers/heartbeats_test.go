@@ -13,16 +13,16 @@ import (
 	"github.com/stretchr/testify/require"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/phase1/forkchoice/mock_services"
-	"github.com/ledgerwatch/erigon/cl/sentinel/communication"
-	"github.com/ledgerwatch/erigon/cl/sentinel/communication/ssz_snappy"
-	"github.com/ledgerwatch/erigon/cl/sentinel/handshake"
-	"github.com/ledgerwatch/erigon/cl/sentinel/peers"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/enr"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/cltypes"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/forkchoice/mock_services"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/communication"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/communication/ssz_snappy"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/handshake"
+	"github.com/ledgerwatch/erigon/v2/cl/sentinel/peers"
+	"github.com/ledgerwatch/erigon/v2/crypto"
+	"github.com/ledgerwatch/erigon/v2/p2p/enode"
+	"github.com/ledgerwatch/erigon/v2/p2p/enr"
 )
 
 var (

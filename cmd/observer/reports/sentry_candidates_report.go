@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/cmd/observer/database"
-	"github.com/ledgerwatch/erigon/cmd/observer/observer/sentry_candidates"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/database"
+	"github.com/ledgerwatch/erigon/v2/cmd/observer/observer/sentry_candidates"
 )
 
 type SentryCandidatesReport struct {

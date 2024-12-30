@@ -10,10 +10,10 @@ import (
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/clparams/initial_state"
-	"github.com/ledgerwatch/erigon/cl/phase1/forkchoice/mock_services"
-	"github.com/ledgerwatch/erigon/cl/utils/eth_clock"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams"
+	"github.com/ledgerwatch/erigon/v2/cl/clparams/initial_state"
+	"github.com/ledgerwatch/erigon/v2/cl/phase1/forkchoice/mock_services"
+	"github.com/ledgerwatch/erigon/v2/cl/utils/eth_clock"
 )
 
 func getEthClock(t *testing.T) eth_clock.EthereumClock {

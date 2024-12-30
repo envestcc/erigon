@@ -4,7 +4,7 @@ import (
 	"sync/atomic"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/ledgerwatch/erigon/v2/core/types"
 )
 
 type StepDurationInfo struct {

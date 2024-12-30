@@ -12,8 +12,8 @@ import (
 	"github.com/ledgerwatch/erigon-lib/downloader"
 	"github.com/ledgerwatch/erigon-lib/downloader/snaptype"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	coresnaptype "github.com/ledgerwatch/erigon/core/snaptype"
-	borsnaptype "github.com/ledgerwatch/erigon/polygon/bor/snaptype"
+	coresnaptype "github.com/ledgerwatch/erigon/v2/core/snaptype"
+	borsnaptype "github.com/ledgerwatch/erigon/v2/polygon/bor/snaptype"
 	"github.com/ledgerwatch/log/v3"
 )
 

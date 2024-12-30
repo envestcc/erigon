@@ -4,7 +4,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/beacon/beaconevents"
+	"github.com/ledgerwatch/erigon/v2/cl/beacon/beaconevents"
 	"github.com/stretchr/testify/require"
 )
 

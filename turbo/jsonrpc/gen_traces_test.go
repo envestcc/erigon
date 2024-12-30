@@ -11,15 +11,15 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/cli/httpcfg"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
-	"github.com/ledgerwatch/erigon/eth/tracers"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/cli/httpcfg"
+	"github.com/ledgerwatch/erigon/v2/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/ledgerwatch/erigon/v2/eth/tracers"
+	"github.com/ledgerwatch/erigon/v2/rpc"
+	"github.com/ledgerwatch/erigon/v2/rpc/rpccfg"
 
 	// Force-load native and js packages, to trigger registration
-	_ "github.com/ledgerwatch/erigon/eth/tracers/js"
-	_ "github.com/ledgerwatch/erigon/eth/tracers/native"
+	_ "github.com/ledgerwatch/erigon/v2/eth/tracers/js"
+	_ "github.com/ledgerwatch/erigon/v2/eth/tracers/native"
 )
 
 /*

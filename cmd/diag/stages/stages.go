@@ -6,8 +6,8 @@ import (
 
 	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/ledgerwatch/erigon-lib/diagnostics"
-	"github.com/ledgerwatch/erigon/cmd/diag/flags"
-	"github.com/ledgerwatch/erigon/cmd/diag/util"
+	"github.com/ledgerwatch/erigon/v2/cmd/diag/flags"
+	"github.com/ledgerwatch/erigon/v2/cmd/diag/util"
 	"github.com/urfave/cli/v2"
 )
 

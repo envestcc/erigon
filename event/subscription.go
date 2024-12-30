@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ledgerwatch/erigon/common/mclock"
+	"github.com/ledgerwatch/erigon/v2/common/mclock"
 )
 
 // Subscription represents a stream of events. The carrier of the events is typically a
