@@ -7,7 +7,6 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/gballet/go-verkle"
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutil"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
@@ -42,7 +41,7 @@ func (h Header) MarshalJSON() ([]byte, error) {
 		ParentBeaconBlockRoot *common.Hash    `json:"parentBeaconBlockRoot"`
 		Verkle                bool
 		VerkleProof           []byte
-		VerkleKeyVals         []verkle.KeyValuePair
+		VerkleKeyVals         []KeyValuePair
 		Hash                  common.Hash `json:"hash"`
 	}
 	var enc Header
@@ -102,7 +101,7 @@ func (h *Header) UnmarshalJSON(input []byte) error {
 		ParentBeaconBlockRoot *common.Hash    `json:"parentBeaconBlockRoot"`
 		Verkle                *bool
 		VerkleProof           []byte
-		VerkleKeyVals         []verkle.KeyValuePair
+		VerkleKeyVals         []KeyValuePair
 	}
 	var dec Header
 	if err := json.Unmarshal(input, &dec); err != nil {

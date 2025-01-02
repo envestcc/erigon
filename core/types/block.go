@@ -27,8 +27,6 @@ import (
 	"reflect"
 	"sync/atomic"
 
-	"github.com/gballet/go-verkle"
-
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutil"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
@@ -72,6 +70,11 @@ func (n *BlockNonce) UnmarshalText(input []byte) error {
 	return hexutility.UnmarshalFixedText("BlockNonce", input, n[:])
 }
 
+type KeyValuePair struct {
+	Key   []byte
+	Value []byte
+}
+
 // go:generate gencodec -type Header -field-override headerMarshaling -out gen_header_json.go
 
 // Header represents a block header in the Ethereum blockchain.
@@ -108,7 +111,7 @@ type Header struct {
 	// The verkle proof is ignored in legacy headers
 	Verkle        bool
 	VerkleProof   []byte
-	VerkleKeyVals []verkle.KeyValuePair
+	VerkleKeyVals []KeyValuePair
 }
 
 func (h *Header) EncodingSize() int {
