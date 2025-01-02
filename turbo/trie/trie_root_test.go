@@ -445,7 +445,7 @@ func FuzzTrieRootStorage(f *testing.F) {
 // translated to initial and modified hashes.
 func FuzzTrieRootAccounts(f *testing.F) {
 	addFuzzTrieSeeds(f)
-
+	log.Root().SetHandler(log.StdoutHandler)
 	f.Fuzz(func(t *testing.T, initialCount, modifiedCount int, hashFragments []byte) {
 		initialKeys, modifiedKeys := validateFuzzInputs(t, initialCount, modifiedCount, hashFragments)
 

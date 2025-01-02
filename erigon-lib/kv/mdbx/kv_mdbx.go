@@ -20,6 +20,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/binary"
+	"encoding/hex"
 	"errors"
 	"fmt"
 	"os"
@@ -1176,6 +1177,7 @@ func (tx *MdbxTx) statelessCursor(bucket string) (kv.RwCursor, error) {
 }
 
 func (tx *MdbxTx) Put(table string, k, v []byte) error {
+	log.Debug("put", "table", table, "key", hex.EncodeToString(k), "value", hex.EncodeToString(v))
 	c, err := tx.statelessCursor(table)
 	if err != nil {
 		return err
@@ -1184,6 +1186,7 @@ func (tx *MdbxTx) Put(table string, k, v []byte) error {
 }
 
 func (tx *MdbxTx) Delete(table string, k []byte) error {
+	log.Debug("delete", "table", table, "key", hex.EncodeToString(k))
 	c, err := tx.statelessCursor(table)
 	if err != nil {
 		return err
@@ -1192,6 +1195,7 @@ func (tx *MdbxTx) Delete(table string, k []byte) error {
 }
 
 func (tx *MdbxTx) GetOne(bucket string, k []byte) ([]byte, error) {
+	log.Debug("get one", "bucket", bucket, "key", hex.EncodeToString(k))
 	c, err := tx.statelessCursor(bucket)
 	if err != nil {
 		return nil, err
@@ -1201,6 +1205,7 @@ func (tx *MdbxTx) GetOne(bucket string, k []byte) ([]byte, error) {
 }
 
 func (tx *MdbxTx) Has(bucket string, key []byte) (bool, error) {
+	log.Debug("has", "bucket", bucket, "key", hex.EncodeToString(key))
 	c, err := tx.statelessCursor(bucket)
 	if err != nil {
 		return false, err
@@ -1213,6 +1218,7 @@ func (tx *MdbxTx) Has(bucket string, key []byte) (bool, error) {
 }
 
 func (tx *MdbxTx) Append(bucket string, k, v []byte) error {
+	log.Debug("append", "bucket", bucket, "key", hex.EncodeToString(k), "value", hex.EncodeToString(v))
 	c, err := tx.statelessCursor(bucket)
 	if err != nil {
 		return err
@@ -1220,6 +1226,7 @@ func (tx *MdbxTx) Append(bucket string, k, v []byte) error {
 	return c.Append(k, v)
 }
 func (tx *MdbxTx) AppendDup(bucket string, k, v []byte) error {
+	log.Debug("append dup", "bucket", bucket, "key", hex.EncodeToString(k), "value", hex.EncodeToString(v))
 	c, err := tx.statelessCursor(bucket)
 	if err != nil {
 		return err
@@ -1228,6 +1235,7 @@ func (tx *MdbxTx) AppendDup(bucket string, k, v []byte) error {
 }
 
 func (tx *MdbxTx) IncrementSequence(bucket string, amount uint64) (uint64, error) {
+	log.Debug("increment sequence", "bucket", bucket, "amount", amount)
 	c, err := tx.statelessCursor(kv.Sequence)
 	if err != nil {
 		return 0, err

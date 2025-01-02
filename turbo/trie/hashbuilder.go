@@ -202,7 +202,7 @@ func (hb *HashBuilder) completeLeafHash(kp, kl, compactLen int, key []byte, comp
 
 func (hb *HashBuilder) leafHash(length int, keyHex []byte, val rlphacks.RlpSerializable) error {
 	if hb.trace {
-		fmt.Printf("LEAFHASH %d\n", length)
+		fmt.Printf("LEAFHASH %d %x\n", length, keyHex)
 	}
 	if length < 0 {
 		return fmt.Errorf("length %d", length)
@@ -213,7 +213,7 @@ func (hb *HashBuilder) leafHash(length int, keyHex []byte, val rlphacks.RlpSeria
 
 func (hb *HashBuilder) accountLeaf(length int, keyHex []byte, balance *uint256.Int, nonce uint64, incarnation uint64, fieldSet uint32, accountCodeSize int) (err error) {
 	if hb.trace {
-		fmt.Printf("ACCOUNTLEAF %d (%b)\n", length, fieldSet)
+		fmt.Printf("ACCOUNTLEAF %d (%b) %s %x\n", length, fieldSet, balance.String(), keyHex)
 	}
 	fullKey := keyHex[:len(keyHex)-1]
 	key := keyHex[len(keyHex)-length:]
@@ -288,7 +288,7 @@ func (hb *HashBuilder) accountLeaf(length int, keyHex []byte, balance *uint256.I
 
 func (hb *HashBuilder) accountLeafHash(length int, keyHex []byte, balance *uint256.Int, nonce uint64, incarnation uint64, fieldSet uint32) (err error) {
 	if hb.trace {
-		fmt.Printf("ACCOUNTLEAFHASH %d (%b)\n", length, fieldSet)
+		fmt.Printf("ACCOUNTLEAFHASH %d (%b) %s %x\n", length, fieldSet, balance.String(), keyHex)
 	}
 	key := keyHex[len(keyHex)-length:]
 	hb.acc.Nonce = nonce

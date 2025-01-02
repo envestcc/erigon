@@ -727,6 +727,14 @@ func assertSubset(a, b uint16) {
 	}
 }
 
+func DebugAccountTrieCollector(collector *etl.Collector) trie.HashCollector2 {
+	return accountTrieCollector(collector)
+}
+
+func DebugStorageTrieCollector(collector *etl.Collector) trie.StorageHashCollector2 {
+	return storageTrieCollector(collector)
+}
+
 func accountTrieCollector(collector *etl.Collector) trie.HashCollector2 {
 	newV := make([]byte, 0, 1024)
 	return func(keyHex []byte, hasState, hasTree, hasHash uint16, hashes, _ []byte) error {
