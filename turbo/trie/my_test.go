@@ -331,7 +331,7 @@ func TestTrieStorage(t *testing.T) {
 }
 
 func TestWalkDB(t *testing.T) {
-	rw, err := mdbx.NewMDBX(log.New()).Path(dbpath).Open(context.Background())
+	rw, err := mdbx.NewMDBX(log.New()).Path("/Users/chenchen/iotex-var-standalone/data/historyindex").Open(context.Background())
 	require.NoError(t, err)
 	defer rw.Close()
 
@@ -368,7 +368,7 @@ func walkdb(rw kv.RoDB) error {
 		total += tsize
 		keynum := uint64(0)
 		err = tx.ForEach(table, nil, func(k, v []byte) error {
-			if keynum < 3 {
+			if keynum < 300 {
 				fmt.Printf("table: %s, key: %x, value: %x\n", table, k, v)
 			}
 			keynum++
@@ -495,7 +495,7 @@ func walkdbkv(rw kv.RoDB) error {
 }
 
 func TestWalkHistory(t *testing.T) {
-	rw, err := mdbx.NewMDBX(log.New()).Path(historydbpath).Open(context.Background())
+	rw, err := mdbx.NewMDBX(log.New()).Path("/Users/chenchen/iotex-var-standalone/data/historyindex").Open(context.Background())
 	require.NoError(t, err)
 	defer rw.Close()
 
@@ -507,9 +507,12 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 	require.NoError(t, os.RemoveAll(historydbpath))
 	lg := log.New()
 	lg.SetHandler(log.StdoutHandler)
-	// log.Root().SetHandler(log.StdoutHandler)
+	log.Root().SetHandler(log.StdoutHandler)
 
-	rw, err := mdbx.NewMDBX(lg).Path(historydbpath).Open(context.Background())
+	rw, err := mdbx.NewMDBX(lg).Path(historydbpath).WithTableCfg(func(defaultBuckets kv.TableCfg) kv.TableCfg {
+		defaultBuckets["erigonsystem"] = kv.TableCfgItem{}
+		return defaultBuckets
+	} ).Open(context.Background())
 	require.NoError(t, err)
 	defer rw.Close()
 
@@ -533,9 +536,24 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
 			t.Errorf("error finalising 1st tx: %v", err)
 		}
-		fmt.Println("committing 1st tx")
+
+		// start the 2nd transaction
+		intraBlockState.SetState(contract, &key, *uint256.NewInt(109))
+		fmt.Println("finalizing 2st tx")
+		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
+			t.Errorf("error finalising 2st tx: %v", err)
+		}
+
+		// start the 3rd transaction
+		intraBlockState.SetState(contract, &key, *uint256.NewInt(100))
+		fmt.Println("finalizing 3st tx")
+		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
+			t.Errorf("error finalising 3st tx: %v", err)
+		}
+
+		fmt.Println("committing 1st block")
 		if err := intraBlockState.CommitBlock(&chain.Rules{}, tsw); err != nil {
-			t.Errorf("error committing 1st tx: %v", err)
+			t.Errorf("error committing 1st block: %v", err)
 		}
 		intraBlockState.Print(chain.Rules{})
 
@@ -553,28 +571,28 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		require.NoError(t, err)
 		defer tx.Rollback()
 
-		accTrieCollector := etl.NewCollector(logPrefix, dbDir, etl.NewSortableBuffer(etl.BufferOptimalSize), lg)
-		defer accTrieCollector.Close()
-		accTrieCollectorFunc := stagedsync.DebugAccountTrieCollector(accTrieCollector)
-		stTrieCollector := etl.NewCollector(logPrefix, dbDir, etl.NewSortableBuffer(etl.BufferOptimalSize), lg)
-		defer stTrieCollector.Close()
-		stTrieCollectorFunc := stagedsync.DebugStorageTrieCollector(stTrieCollector)
+		// accTrieCollector := etl.NewCollector(logPrefix, dbDir, etl.NewSortableBuffer(etl.BufferOptimalSize), lg)
+		// defer accTrieCollector.Close()
+		// accTrieCollectorFunc := stagedsync.DebugAccountTrieCollector(accTrieCollector)
+		// stTrieCollector := etl.NewCollector(logPrefix, dbDir, etl.NewSortableBuffer(etl.BufferOptimalSize), lg)
+		// defer stTrieCollector.Close()
+		// stTrieCollectorFunc := stagedsync.DebugStorageTrieCollector(stTrieCollector)
 
-		rl := trie.NewRetainList(0)
+		// rl := trie.NewRetainList(0)
 		r := state.NewPlainState(tx, 2, nil)
 		a, err := r.ReadAccountData(contract)
 		require.NoError(t, err)
 		t.Logf("acc: %+v", a)
-		pr, err := trie.NewProofRetainer(contract, a, nil, rl)
-		require.NoError(t, err)
-		loader := trie.NewFlatDBTrieLoader(logPrefix, rl, accTrieCollectorFunc, stTrieCollectorFunc, false)
-		loader.SetProofRetainer(pr)
-		root, err := loader.CalcTrieRoot(tx, nil)
-		require.NoError(t, err)
-		t.Log("trie root", root)
-		proof, err := pr.ProofResult()
-		require.NoError(t, err)
-		t.Logf("account root: %+v", proof.StorageHash)
+		// pr, err := trie.NewProofRetainer(contract, a, nil, rl)
+		// require.NoError(t, err)
+		// loader := trie.NewFlatDBTrieLoader(logPrefix, rl, accTrieCollectorFunc, stTrieCollectorFunc, false)
+		// loader.SetProofRetainer(pr)
+		// root, err := loader.CalcTrieRoot(tx, nil)
+		// require.NoError(t, err)
+		// t.Log("trie root", root)
+		// proof, err := pr.ProofResult()
+		// require.NoError(t, err)
+		// t.Logf("account root: %+v", proof.StorageHash)
 	}
 	readFn()
 
@@ -620,7 +638,12 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 			require.NoError(t, err)
 			v, err := r.ReadAccountStorage(contract, 1, &key)
 			require.NoError(t, err)
-			t.Logf("acc at %d: %+v, value: %x", i, a, v)
+			
+			ir := state.New(r)
+			val := uint256.NewInt(0)
+			ir.GetState(contract, &key, val)
+
+			t.Logf("acc at %d: %+v, value: %x, value2: %x", i, a, v, val)
 		}
 	}()
 }
