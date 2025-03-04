@@ -33,6 +33,8 @@ var (
 	contract  = libcommon.HexToAddress("0x71dd1027069078091B3ca48093B00E4735B20624")
 	contract2 = libcommon.HexToAddress("0x71dd1027069078091B3ca48093B00E4735B20621")
 	key       = libcommon.BigToHash(big.NewInt(1))
+	key2 	= libcommon.BigToHash(big.NewInt(2))
+	key3 	= libcommon.BigToHash(big.NewInt(3))
 )
 
 func TestMyTrieWrite(t *testing.T) {
@@ -525,12 +527,14 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 
 		r, tsw := state.NewPlainStateReader(tx), state.NewPlainStateWriter(tx, tx, 1)
 		intraBlockState := state.New(r)
+		noop := state.NewNoopWriter()
 		oldCode := []byte{0x01, 0x02, 0x03, 0x04}
 		// Start the 1st transaction
 		intraBlockState.CreateAccount(contract, true)
 		intraBlockState.SetCode(contract, oldCode)
 		intraBlockState.AddBalance(contract, uint256.NewInt(1000000000))
 		intraBlockState.SetState(contract, &key, *uint256.NewInt(100))
+		intraBlockState.SetState(contract, &key2, *uint256.NewInt(100))
 
 		fmt.Println("finalizing 1st tx")
 		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
@@ -538,21 +542,15 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		}
 
 		// start the 2nd transaction
-		intraBlockState.SetState(contract, &key, *uint256.NewInt(109))
+		// intraBlockState.SetState(contract, &key, *uint256.NewInt(109))
+		intraBlockState.SetState(contract, &key3, *uint256.NewInt(100))
 		fmt.Println("finalizing 2st tx")
 		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
 			t.Errorf("error finalising 2st tx: %v", err)
 		}
 
-		// start the 3rd transaction
-		intraBlockState.SetState(contract, &key, *uint256.NewInt(100))
-		fmt.Println("finalizing 3st tx")
-		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
-			t.Errorf("error finalising 3st tx: %v", err)
-		}
-
 		fmt.Println("committing 1st block")
-		if err := intraBlockState.CommitBlock(&chain.Rules{}, tsw); err != nil {
+		if err := intraBlockState.CommitBlock(&chain.Rules{}, noop); err != nil {
 			t.Errorf("error committing 1st block: %v", err)
 		}
 		intraBlockState.Print(chain.Rules{})
@@ -605,6 +603,7 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 
 		r, tsw := state.NewPlainStateReader(tx), state.NewPlainStateWriter(tx, tx, 2)
 		intraBlockState := state.New(r)
+		noop := state.NewNoopWriter()
 		// Start the 1st transaction
 		intraBlockState.AddBalance(contract, uint256.NewInt(1000000000))
 		intraBlockState.SetState(contract, &key, *uint256.NewInt(200))
@@ -613,8 +612,17 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
 			t.Errorf("error finalising 1st tx: %v", err)
 		}
+
+		// Start the 1st transaction
+		intraBlockState.SetState(contract, &key, *uint256.NewInt(100))
+
+		fmt.Println("finalizing 1st tx")
+		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
+			t.Errorf("error finalising 1st tx: %v", err)
+		}
 		fmt.Println("committing 1st tx")
-		if err := intraBlockState.CommitBlock(&chain.Rules{}, tsw); err != nil {
+		// intraBlockState.Reset()
+		if err := intraBlockState.CommitBlock(&chain.Rules{}, noop); err != nil {
 			t.Errorf("error committing 1st tx: %v", err)
 		}
 		intraBlockState.Print(chain.Rules{})
@@ -632,18 +640,21 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		require.NoError(t, err)
 		defer tx.Rollback()
 
+		keys := []libcommon.Hash{key, key2, key3}
 		for i := 0; i <= 3; i++ {
 			r := state.NewPlainState(tx, uint64(i), nil)
 			a, err := r.ReadAccountData(contract)
 			require.NoError(t, err)
-			v, err := r.ReadAccountStorage(contract, 1, &key)
-			require.NoError(t, err)
-			
-			ir := state.New(r)
-			val := uint256.NewInt(0)
-			ir.GetState(contract, &key, val)
+			for _, k := range keys {	
+				v, err := r.ReadAccountStorage(contract, 1, &k)
+				require.NoError(t, err)
+				
+				ir := state.New(r)
+				val := uint256.NewInt(0)
+				ir.GetState(contract, &k, val)
 
-			t.Logf("acc at %d: %+v, value: %x, value2: %x", i, a, v, val)
+				t.Logf("acc at %d: %+v, key:%x, value: %x, value2: %x", i, a, k[:],v, val)
+			}
 		}
 	}()
 }
