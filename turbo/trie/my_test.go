@@ -537,7 +537,7 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		intraBlockState.SetState(contract, &key2, *uint256.NewInt(100))
 
 		fmt.Println("finalizing 1st tx")
-		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
+		if err := intraBlockState.FinalizeTx(&chain.Rules{}, noop); err != nil {
 			t.Errorf("error finalising 1st tx: %v", err)
 		}
 
@@ -545,12 +545,12 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		// intraBlockState.SetState(contract, &key, *uint256.NewInt(109))
 		intraBlockState.SetState(contract, &key3, *uint256.NewInt(100))
 		fmt.Println("finalizing 2st tx")
-		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
+		if err := intraBlockState.FinalizeTx(&chain.Rules{}, noop); err != nil {
 			t.Errorf("error finalising 2st tx: %v", err)
 		}
 
 		fmt.Println("committing 1st block")
-		if err := intraBlockState.CommitBlock(&chain.Rules{}, noop); err != nil {
+		if err := intraBlockState.CommitBlock(&chain.Rules{}, tsw); err != nil {
 			t.Errorf("error committing 1st block: %v", err)
 		}
 		intraBlockState.Print(chain.Rules{})
@@ -609,7 +609,7 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		intraBlockState.SetState(contract, &key, *uint256.NewInt(200))
 
 		fmt.Println("finalizing 1st tx")
-		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
+		if err := intraBlockState.FinalizeTx(&chain.Rules{}, noop); err != nil {
 			t.Errorf("error finalising 1st tx: %v", err)
 		}
 
@@ -617,12 +617,12 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		intraBlockState.SetState(contract, &key, *uint256.NewInt(100))
 
 		fmt.Println("finalizing 1st tx")
-		if err := intraBlockState.FinalizeTx(&chain.Rules{}, tsw); err != nil {
+		if err := intraBlockState.FinalizeTx(&chain.Rules{}, noop); err != nil {
 			t.Errorf("error finalising 1st tx: %v", err)
 		}
 		fmt.Println("committing 1st tx")
 		// intraBlockState.Reset()
-		if err := intraBlockState.CommitBlock(&chain.Rules{}, noop); err != nil {
+		if err := intraBlockState.CommitBlock(&chain.Rules{}, tsw); err != nil {
 			t.Errorf("error committing 1st tx: %v", err)
 		}
 		intraBlockState.Print(chain.Rules{})
