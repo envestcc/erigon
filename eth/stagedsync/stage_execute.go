@@ -93,6 +93,12 @@ type ExecuteBlockCfg struct {
 	silkworm *silkworm.Silkworm
 }
 
+func NewExecuteBlockCfgForTest(prune prune.Mode) ExecuteBlockCfg {
+	return ExecuteBlockCfg{
+		prune: prune,
+	}
+}
+
 func StageExecuteBlocksCfg(
 	db kv.RwDB,
 	pm prune.Mode,

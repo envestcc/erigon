@@ -22,6 +22,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/schollz/progressbar/v3"
 	"github.com/stretchr/testify/require"
+	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
+	"github.com/ledgerwatch/erigon/ethdb/prune"
 )
 
 const (
@@ -635,6 +637,38 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 		require.NoError(t, err)
 	}()
 
+	lg.Info("block 3")
+	func() {
+		tx, err := rw.BeginRw(context.Background())
+		require.NoError(t, err)
+		defer func() { require.NoError(t, tx.Commit()) }()
+
+		r, tsw := state.NewPlainStateReader(tx), state.NewPlainStateWriter(tx, tx, 3)
+		intraBlockState := state.New(r)
+		noop := state.NewNoopWriter()
+		// Start the 1st transaction
+		intraBlockState.AddBalance(contract, uint256.NewInt(1000000000))
+		intraBlockState.SetState(contract, &key, *uint256.NewInt(300))
+
+		fmt.Println("finalizing 1st tx")
+		if err := intraBlockState.FinalizeTx(&chain.Rules{}, noop); err != nil {
+			t.Errorf("error finalising 1st tx: %v", err)
+		}
+
+		// intraBlockState.Reset()
+		if err := intraBlockState.CommitBlock(&chain.Rules{}, tsw); err != nil {
+			t.Errorf("error committing 1st tx: %v", err)
+		}
+		intraBlockState.Print(chain.Rules{})
+
+		t.Logf("write changesets")
+		err = tsw.WriteChangeSets()
+		require.NoError(t, err)
+		t.Logf("write history")
+		err = tsw.WriteHistory()
+		require.NoError(t, err)
+	}()
+
 	func() {
 		tx, err := rw.BeginRo(context.Background())
 		require.NoError(t, err)
@@ -656,6 +690,31 @@ func TestMyHistoryTrieWrite(t *testing.T) {
 				t.Logf("acc at %d: %+v, key:%x, value: %x, value2: %x", i, a, k[:],v, val)
 			}
 		}
+	}()
+
+	lg.Info("prune to block 2")
+	func(){
+		tx, err := rw.BeginRw(context.Background())
+		require.NoError(t, err)
+		defer tx.Rollback()
+
+		available, err := historyv2.AvailableFrom(tx)
+		require.NoError(t, err)
+		require.Equal(t, uint64(1), available)
+		available, err = historyv2.AvailableStorageFrom(tx)
+		require.NoError(t, err)
+		require.Equal(t, uint64(1), available)
+
+		s := &stagedsync.PruneState{ID: stages.Execution, ForwardProgress: 3}
+		err = stagedsync.PruneExecutionStage(s, tx, stagedsync.NewExecuteBlockCfgForTest(prune.Mode{History: prune.Distance(1), Receipts: prune.Distance(1), CallTraces: prune.Distance(1)}), context.Background(), false)
+		require.NoError(t, err)
+
+		available, err = historyv2.AvailableFrom(tx)
+		require.NoError(t, err)
+		require.Equal(t, uint64(2), available)
+		available, err = historyv2.AvailableStorageFrom(tx)
+		require.NoError(t, err)
+		require.Equal(t, uint64(3), available)
 	}()
 }
 
